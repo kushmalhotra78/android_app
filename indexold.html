@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <title>Hello World</title>
+
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/custom.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+    </head>
+    <body>
+    
+    <!-- Connecting to PHONEGAP CODE -->
+        <div class="app">
+            <h1>PhoneGap</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
+        
+        <!------------------------ PAGE 1------------------------------->
+        <div data-role="page" id="one">
+
+	
+	<div role="main" class="ui-content" style="background-color:#167cc4;">
+    <!--GRID START-->
+    <div class="ui-grid-b ui-content">
+	<div class="ui-block-a center"> <a href="#leftpanel3" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
+    <div data-role="panel" id="leftpanel3" data-position="left" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
+
+        <div class="ui-panel-inner"><h3>Left Panel: Overlay</h3><p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p><p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p><a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a></div>
+        
+        
+        
+</div>
+    </div>
+	<div class="ui-block-b center"></div>
+	
+</div><!-- /grid-b -->
+    <!--GRID ENDS-->
+    <!--GRID START-->
+    <div class="ui-grid-b ui-content">
+	<div class="ui-block-a center">Block A</div>
+	<div class="ui-block-b center"><img src="images/kush.jpg" class="img-circle" height="120px" width="120px">
+    <h1>Kush Malhotra</h1>
+    <h3>Mobile Ui/Ux Designer</h3>
+    </div>
+	<div class="ui-block-c center" >Block C</div>
+</div><!-- /grid-b -->
+    <!--GRID ENDS-->
+    	
+        <!--GRID START-->
+    <div class="ui-grid-a">
+	<div class="ui-block-a"></div>
+    <div class="ui-block-b right"><img src="images/twitter.png"><img src="images/facebook.png"></div>
+    </div>
+   <!--GRID ENDS-->
+	</div><!-- /content -->
+    
+<div class="arrow_box" style="margin-top:-15px;">
+            <h1 class="smallwhitehead">What is your opinion of me?</h1>
+          </div>
+
+<a href="#two" data-transition="slide"><button class="tablink">1</button></a>
+<div>2</div>
+<div>3</div>
+ <!------------------------ PAGE 2------------------------------->
+ <div data-role="page" id="two">
+
+	<div data-role="header">
+		<h1>Page Title</h1>
+  <a href="#leftpanel4" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
+<a href="#one" data-direction="reverse" class="ui-btn ui-icon-carat-l ui-btn-icon-left ui-shadow ui-corner-all">carat-l</a>
+	</div><!-- /header -->
+<div data-role="panel" id="leftpanel4" data-position="left" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
+
+        <div class="ui-panel-inner"><h3>Left Panel: Overlay</h3><p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p><p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p><a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a></div>
+        
+        
+        
+
+	</div>
+    
+	<!--GRID START-->
+    <div class="ui-grid-b ui-content">
+	<div class="ui-block-a">Block A</div>
+	<div class="ui-block-b">Block B</div>
+	<div class="ui-block-c">Block C</div>
+</div><!-- /grid-b -->
+    <!--GRID ENDS-->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
