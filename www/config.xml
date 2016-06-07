@@ -66,6 +66,7 @@
         <icon   src="www/res/icon/android/drawable-xxhdpi-icon.png"             density="xxhdpi" />
         <icon   src="www/res/icon/android/drawable-xxxhdpi-icon.png"            density="xxxhdpi" />
 
+<gap:splash src="splash.png" />
 <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="www/res/screen/android/drawable-port-ldpi-screen.png" density="port-ldpi"/>
 <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="www/res/screen/android/drawable-port-mdpi-screen.png"  density="port-hdpi"/>
 <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
