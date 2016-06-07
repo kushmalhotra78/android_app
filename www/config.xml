@@ -59,6 +59,11 @@
         <icon   src="www/res/icon/android/drawable-xhdpi-icon.png"              density="xhdpi" />
         <icon   src="www/res/icon/android/drawable-xxhdpi-icon.png"             density="xxhdpi" />
         <icon   src="www/res/icon/android/drawable-xxxhdpi-icon.png"            density="xxxhdpi" />
+        
+        
+    <!-- Define app splash screen for each platform. -->
+    
+    <gap:splash src="splash.png" />
         <splash src="www/res/screen/android/drawable-land-ldpi-screen.png"      density="land-ldpi" />
         <splash src="www/res/screen/android/drawable-land-mdpi-screen.png"      density="land-mdpi" />
         <splash src="www/res/screen/android/drawable-land-hdpi-screen.png"      density="land-hdpi" />
