@@ -1,5 +1,5 @@
 body{
-	background:url(../img/stardust.png);
+	background:url(../images/stardust.png);
 	
 	}
 .img-circle {
@@ -66,6 +66,7 @@ h3{
 	text-decoration:none;
 	color:#fff;
 	text-align:left;
+	height:70px;
 	border:0px;
 	
 	
