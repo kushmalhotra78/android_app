@@ -67,7 +67,7 @@ h3{
 	text-decoration:none;
 	color:#fff;
 	text-align:left;
-	min-height:60px;
+
 	border:0px;
 	
 	
@@ -106,4 +106,14 @@ h3{
 h1{
 	font-size:20px;
 	
+	}
+
+#facebookpopup{
+	background-color:#231f20;
+	}
+	
+#facebookpopup h3{
+	font-size:23px;
+
+
 	}
