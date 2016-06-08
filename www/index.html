@@ -51,9 +51,10 @@
     <title>Kush Malhotra</title>
 </head>
 
- <body>
+   <body>
     
-    
+ 
+        
         <!------------------------ PAGE 1------------------------------->
         <div data-role="page" id="one">
 
@@ -91,7 +92,20 @@
         <!--GRID START-->
     <div class="ui-grid-a" >
 	<div class="ui-block-a"></div>
-    <div class="ui-block-b right"><a href="#"><img src="img/facebook.png"></a></div>
+    <div class="ui-block-b right"><a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-btn-inline " data-transition="pop"><img src="img/facebook.png"></a></div>
+    <div data-role="popup" id="popupLogin" data-theme="b" style="background-color:#231f20;">
+    <form>
+        <div style="padding:10px 20px;" id="facebookpopup">
+<center><img src="img/facebook.png"></center>
+            <h3>Please sign in</h3>
+            <label for="un" class="ui-hidden-accessible">Username:</label>
+            <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+            <label for="pw" class="ui-hidden-accessible">Password:</label>
+            <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+            <button type="submit" class="ui-btn">Sign in</button>
+        </div>
+    </form>
+</div>
     </div>
    <!--GRID ENDS-->
 
