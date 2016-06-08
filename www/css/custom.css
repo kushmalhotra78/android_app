@@ -1,7 +1,10 @@
-
+body{
+	background:url(../images/stardust.png);
+	
+	}
 .img-circle {
 	border-radius: 50%;
-	border:2px solid #fff;
+	border:5px solid #46424a;
 }
 
 .img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
@@ -19,20 +22,20 @@ text-align:right;
 h1{
 	color:#fff;
 	font-size:20px;
-	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	
 	}
 h3{
 	color:#76b5e2;
 	font-size:11px;
 	margin-top:-10px;
-	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	
 	}
 	
-.arrow_box {
+.arrow_box1 {
 	position: relative;
-	background: #273e50;
+	
 }
-.arrow_box:after {
+.arrow_box1:after {
 	bottom: 100%;
 	left: 50%;
 	border: solid transparent;
@@ -48,9 +51,9 @@ h3{
 }
 .smallwhitehead{
 	color:#fff;
-	font-size:14px;
+	font-size:20px;
 	text-align:center !important;
-	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	
 	font-weight:normal;
 	padding:5px;
 	
@@ -59,22 +62,46 @@ h3{
 .tablink{
 	padding:20px;
 	line-height:10px;
-	background-color:#fff;
-	border-bottom:0px solid #036;
+	background-color:#403c43;
 	text-decoration:none;
-	color:#273e50;
+	color:#fff;
 	text-align:left;
-	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border:0px;
+	
 	
 	}
 	
+#strip{
+	
+	opacity:0.5;	
+	
+	}
+	
+.floating-box {
+    float: left;
+	height:30px;
+}
+.after-box {
+    clear: left;
+   }
+
 .middbackground{
-	background:#273e50;
-	color:#099;
+	color:#959293;
 	margin-top:-15px;
 	padding:5px;
 	font-size:12px;
 	line-height:15px;
-	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	
+	
+	}
+
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	display: block;
+	max-width: 100%;
+	height: auto
+}
+
+h1{
+	font-size:20px;
 	
 	}
