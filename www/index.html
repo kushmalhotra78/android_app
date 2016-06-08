@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="css/custom.css" />
     
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
     <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -51,13 +52,16 @@
 </head>
 
 <body>
-     <!------------------------ PAGE 1------------------------------->
+      <!------------------------ PAGE 1------------------------------->
         <div data-role="page" id="one">
 
 	
-	<div role="main" class="ui-content" style="background-color:#167cc4; background-image:url(img/village-bg.png); background-repeat:no-repeat;">
+	<div role="main" class="ui-content" style="background-color:#167cc4; background-image:url(images/village-bg.png);
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:cover">
     <!--GRID START-->
-    <div class="ui-grid-b ui-content">
+    <div class="ui-grid-b">
 	<div class="ui-block-a center"> <!--<a href="#leftpanel3" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>-->
     <div data-role="panel" id="leftpanel3" data-position="left" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
 
@@ -74,7 +78,7 @@
     <!--GRID START-->
     <div class="ui-grid-b" >
 	<div class="ui-block-a center"></div>
-	<div class="ui-block-b center"><img src="img/kush.jpg" class="img-circle" height="120px" width="120px">
+	<div class="ui-block-b center"><img src="images/kush.jpg" class="img-circle" height="120px" width="120px">
     <h1>Kush Malhotra</h1>
     <h3>Mobile Ui/Ux Designer</h3>
     </div>
@@ -85,7 +89,7 @@
         <!--GRID START-->
     <div class="ui-grid-a" >
 	<div class="ui-block-a"></div>
-    <div class="ui-block-b right"><img src="img/twitter.png"><img src="img/facebook.png"></div>
+    <div class="ui-block-b right"><a href="#"><img src="images/facebook.png"></a></div>
     </div>
    <!--GRID ENDS-->
 
@@ -93,36 +97,87 @@
 	</div><!-- /content -->
     
 <div class="arrow_box" style="margin-top:-15px;">
-            <h1 class="smallwhitehead">What is your opinion of me?</h1>
+       <!--     <h1 class="smallwhitehead">What is your opinion of me?</h1>-->
           </div>
 <!-- /footer -->
-<a href="#two" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right ui-icon-carat-r">Services</button></a>
-<a href="#two" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right ui-icon-carat-r">About Me</button></a>
-<a href="#two" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right ui-icon-carat-r">Portfolio</button></a>
-<a href="#two" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right ui-icon-carat-r">Contact</button></a>
+<a href="#two" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right ">
+<div class="floating-box"><span style="display:inline-block;"><img src="images/tabicon1.png"></span></div>
+<div class="floating-box"><span style="display:inline-block; margin-top:20px; margin-left:10px;">ABOUT ME</span></div>
+<span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span>
+</button></a>
+
+<a href="#two" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right ">
+<div class="floating-box"><span style="display:inline-block;"><img src="images/tabicon2.png"></span></div>
+<div class="floating-box"><span style="display:inline-block; margin-top:20px; margin-left:10px;">SERVICES</span></div>
+<span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span>
+
+</button></a>
+
+<a href="#two" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right ">
+<div class="floating-box"><span style="display:inline-block;"><img src="images/tabicon3.png"></span></div>
+<div class="floating-box"><span style="display:inline-block; margin-top:20px; margin-left:10px;">PORTFOLIO</span></div>
+<span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span>
+
+</button></a>
+
+<a href="#two" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right ">
+<div class="floating-box"><span style="display:inline-block;"><img src="images/tabicon4.png"></span></div>
+<div class="floating-box"><span style="display:inline-block; margin-top:20px; margin-left:10px;">WHY ME?</span></div>
+<span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span>
+
+</button></a>
+
+<a href="#two" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right ">
+<div class="floating-box"><span style="display:inline-block;"><img src="images/tabicon5.png"></span></div>
+<div class="floating-box"><span style="display:inline-block; margin-top:20px; margin-left:10px;">CONTACT</span></div>
+<span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span>
+
+</button></a>
+
+
 </div><!-- /page -->
 
  <!------------------------ PAGE 2------------------------------->
  
-        <div data-role="page" id="two" style="background:#273e50;">
+        <div data-role="page" id="two">
 
 	
-	<div role="main" style="background-color:#167cc4; background-image:url(img/village-bg.png); background-repeat:no-repeat;">
-    
-  
-
-
+	<div role="main" class="ui-content" style="background-image:url(images/village-bg.png);
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:cover">
     <!--GRID START-->
-    <div class="ui-grid-a ui-content">
-    <div class="ui-block-a"><a href="#one" data-direction="reverse" class="ui-btn ui-icon-carat-l ui-btn-icon-left ui-shadow ui-btn-icon-notext ui-corner-all" style="margin-top:-5px;">carat-l</a></div>
-    <div class="ui-block-b"><a href="#leftpanel3" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-right ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all"  style="margin-right:15px;"data-role="button" role="button">Menu</a></div>
-
-    <div data-role="panel" id="leftpanel3" data-position="right" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
+    <div class="ui-grid-b">
+	<div class="ui-block-a center"> <!--<a href="#leftpanel3" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>-->
+    <div data-role="panel" id="leftpanel3" data-position="left" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
 
         <div class="ui-panel-inner"><h3>Left Panel: Overlay</h3><p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p><p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p><a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a></div>
         
-
+        
+        
+</div>
     </div>
+	
+	
+</div><!-- /grid-b -->
+    <!--GRID ENDS-->
+    <!--GRID START-->
+
+
+    <!--GRID START-->
+    
+    <div class="ui-grid-a ">
+    <div class="ui-block-a"><a href="#one" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="margin-top:-5px; text-decoration:none;"></a></div>
+    <div class="ui-block-b"><a href="#inside-a" data-icon="bars" data-iconpos="notext" class="glyphicon glyphicon-menu-hamburger pull-right"  style="margin-right:15px; top:0px;"data-role="button" role="button"></a></div>
+
+    <div data-role="panel" id="inside-a" data-position="right" data-display="overlay" data-theme="b" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-open">
+			<div class="ui-panel-inner"><ul data-role="listview" class="ui-listview">
+				<!--<li data-icon="back" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-back">Close</a></li>-->
+				<li class="ui-li-static ui-body-inherit">Internal panel</li>
+				<li class="ui-li-static ui-body-inherit">Page A</li>
+				<li class="ui-li-static ui-body-inherit ui-last-child">Overlay</li>
+			</ul></div>
+		</div>
 
 	
 </div><!-- /grid-b -->
@@ -130,7 +185,7 @@
     <!--GRID START-->
     <div class="ui-grid-b" >
 	<div class="ui-block-a center"></div>
-	<div class="ui-block-b center"><img src="img/kush.jpg" class="img-circle" height="120px" width="120px">
+	<div class="ui-block-b center"><img src="images/kush.jpg" class="img-circle" height="120px" width="120px">
     <h1>Kush Malhotra</h1>
     <h3>Mobile Ui/Ux Designer</h3>
     </div>
@@ -141,7 +196,7 @@
         <!--GRID START-->
     <div class="ui-grid-a" style="padding-right:10px;">
 	<div class="ui-block-a"></div>
-    <div class="ui-block-b right"><img src="img/twitter.png"><img src="img/facebook.png"></div>
+    <div class="ui-block-b right"><a href="#"><img src="images/facebook.png"></a></div>
     </div>
    <!--GRID ENDS-->
 
@@ -164,11 +219,12 @@
 	</div><!-- /footer -->
 </div><!-- /page -->
 
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+
 </body>
 
 </html>
