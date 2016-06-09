@@ -103,7 +103,7 @@ legend, .ui-input-text input, .ui-input-search input {
 	background-size: 2.875em 2.875em
 }
 .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
-	background-color: #167cc4;
+	background-color: #403c43;
 	color: #333;
 		font-weight: 700
 }
@@ -161,14 +161,7 @@ legend, .ui-input-text input, .ui-input-search input {
 	color: #fff;
 	text-shadow: 0 0px 0 #059
 }
-.ui-page-theme-a .ui-radio-on:after, html .ui-bar-a .ui-radio-on:after, html .ui-body-a .ui-radio-on:after, html body .ui-group-theme-a .ui-radio-on:after, .ui-btn.ui-radio-on.ui-btn-a:after {
-	
-}
-.ui-page-theme-a .ui-btn:focus, html .ui-bar-a .ui-btn:focus, html .ui-body-a .ui-btn:focus, html body .ui-group-theme-a .ui-btn:focus, html head+body .ui-btn.ui-btn-a:focus, .ui-page-theme-a .ui-focus, html .ui-bar-a .ui-focus, html .ui-body-a .ui-focus, html body .ui-group-theme-a .ui-focus, html head+body .ui-btn-a.ui-focus, html head+body .ui-body-a.ui-focus {
-	-webkit-box-shadow: 0 0 12px #38c;
-	-moz-box-shadow: 0 0 12px #38c;
-	
-}
+
 .ui-bar-b, .ui-page-theme-b .ui-bar-inherit, html .ui-bar-b .ui-bar-inherit, html .ui-body-b .ui-bar-inherit, html body .ui-group-theme-b .ui-bar-inherit {
 	background-color: #1d1d1d;
 	border-color: #1b1b1b;
@@ -1715,7 +1708,7 @@ margin-left:.3125em
 .ui-header-fixed, .ui-footer-fixed {
 	left: 0;
 	right: 0;
-	width: 100%;
+	
 	position: fixed;
 	z-index: 1000
 }
