@@ -61,22 +61,31 @@ h3{
 	}
 	
 .tablink{
-	padding:20px;
-	line-height:3px;
+	
 	background-color:#403c43;
 	text-decoration:none;
 	color:#fff;
 	text-align:left;
 	border:0px;
-	
+	}
+.tabname{
+	font-size:15px;
 	
 	}
 	
 .headercontent{
 	color:#fff;
-	font-size:16px;
+	font-size:14px;
 	padding:10px;
 	text-align:center !important;
+	
+	}
+	
+.headercontent{
+	color:#fff;
+	font-size:14px;
+	padding:10px;
+	text-align:center;
 	
 	}
 	
@@ -98,8 +107,8 @@ h3{
 	color:#959293;
 	margin-top:20px;
 	padding:5px;
-	font-size:12px;
-	line-height:15px;
+	font-size:13px;
+	line-height:20px;
 	
 	
 	}
@@ -113,6 +122,14 @@ h3{
 h1{
 	font-size:20px;
 	
+}
+h2{
+	font-size:16px;
+	line-height:20px;
+	color:#fff;
+	font-weight:normal;
+
+	
 	}
 
 #facebookpopup{
@@ -124,3 +141,64 @@ h1{
 
 
 	}
+	
+	
+.update-nag{
+  display: inline-block;
+  font-size: 14px;
+  text-align: left;
+  background-color: #3d363e;
+  height: 40px;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  margin-bottom: 10px;
+}
+
+.update-nag:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.4);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.3);
+}
+
+.update-nag > .update-split{
+  background: #337ab7;
+  width: 33px;
+  float: left;
+  color: #fff!important;
+  height: 100%;
+  text-align: center;
+  font-size:22px;
+  padding-top:10px;
+}
+
+.update-nag > .update-split > .glyphicon{
+  position:relative;
+  top: calc(50% - 9px)!important; /* 50% - 3/4 of icon height */
+  
+}
+.update-nag > .update-split.update-success{
+  background: #5cb85c!important;
+  font-size:22px;
+  padding-top:10px;
+}
+
+.update-nag > .update-split.update-danger{
+  background: #d9534f!important;
+  font-size:22px;
+  padding-top:10px;
+}
+
+.update-nag > .update-split.update-info{
+  background: #5bc0de!important;
+  font-size:22px;
+  padding-top:10px;
+}
+
+
+
+.update-nag > .update-text{
+  line-height: 19px;
+  padding-top: 11px;
+  padding-left: 45px;
+
+}
