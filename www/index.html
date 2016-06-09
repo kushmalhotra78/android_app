@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="css/custom.css" />
     
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
     <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -50,14 +51,20 @@
     <title>Kush Malhotra</title>
 </head>
 
-<body>
-     <!------------------------ PAGE 1------------------------------->
+  <body>
+    
+ 
+        
+        <!------------------------ PAGE 1------------------------------->
         <div data-role="page" id="one">
 
 	
-	<div role="main" class="ui-content" style="background-color:#167cc4; background-image:url(img/village-bg.png); background-repeat:no-repeat;">
+	<div role="main" class="ui-content" style="background-image:url(img/village-bg.png);
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:cover">
     <!--GRID START-->
-    <div class="ui-grid-b ui-content">
+    <div class="ui-grid-b">
 	<div class="ui-block-a center"> <!--<a href="#leftpanel3" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>-->
     <div data-role="panel" id="leftpanel3" data-position="left" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
 
@@ -85,52 +92,118 @@
         <!--GRID START-->
     <div class="ui-grid-a" >
 	<div class="ui-block-a"></div>
-    <div class="ui-block-b right"><img src="img/twitter.png"><img src="img/facebook.png"></div>
+    <div class="ui-block-b right"><a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-btn-inline " data-transition="pop"><img src="img/facebook.png"></a></div>
+    <div data-role="popup" id="popupLogin" data-theme="b" style="background-color:#231f20;">
+    <form>
+        <div style="padding:10px 20px;" id="facebookpopup">
+<center><img src="img/facebook.png"></center>
+            <h3>Please sign in</h3>
+            <label for="un" class="ui-hidden-accessible">Username:</label>
+            <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+            <label for="pw" class="ui-hidden-accessible">Password:</label>
+            <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+            <button type="submit" class="ui-btn" style="background-color:#000;">Sign in</button>
+        </div>
+    </form>
+</div>
     </div>
    <!--GRID ENDS-->
 
         
 	</div><!-- /content -->
     
-<div class="arrow_box" style="margin-top:-15px;">
-            <h1 class="smallwhitehead">What is your opinion of me?</h1>
-          </div>
-<!-- /footer -->
-<a href="#two" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right ui-icon-carat-r">Services</button></a>
-<a href="#two" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right ui-icon-carat-r">About Me</button></a>
-<a href="#two" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right ui-icon-carat-r">Portfolio</button></a>
-<a href="#two" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right ui-icon-carat-r">Contact</button></a>
+
+<a href="#two" data-transition="slide" style="text-decoration:none; "><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
+  <div class="col-xs-2" align="left"><img src="img/tabicon1.png"></div>
+  <div class="col-xs-8 tabname" align="left" style="margin-top:10px;">ABOUT ME</div>
+  <div class="col-xs-2" align="right" ><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></div>
+</div></button></a>
+
+
+
+<a href="#three" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
+  <div class="col-xs-2" align="left"><img src="img/tabicon2.png"></div>
+  <div class="col-xs-8 tabname" align="left" style="margin-top:10px;">SERVICES</div>
+  <div class="col-xs-2" align="right"><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></div>
+</div></button></a>
+
+
+<a href="#four" data-transition="slide" style="text-decoration:none; "><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
+  <div class="col-xs-2" align="left"><img src="img/tabicon3.png"></div>
+  <div class="col-xs-8 tabname" align="left" style="margin-top:10px;">PORTFOLIO</div>
+  <div class="col-xs-2" align="right"><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></div>
+</div></button></a>
+
+<a href="#five" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
+  <div class="col-xs-2" align="left"><img src="img/tabicon4.png"></div>
+  <div class="col-xs-8 tabname" align="left" style="margin-top:10px;">WHY ME?</div>
+  <div class="col-xs-2" align="right"><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></div>
+</div></button></a>
+
+<a href="#six" data-transition="slide" style="text-decoration:none; "><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
+  <div class="col-xs-2" align="left"><img src="img/tabicon5.png"></div>
+  <div class="col-xs-8 tabname" align="left" style="margin-top:10px;">CONTACT</div>
+  <div class="col-xs-2" align="right"><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></div>
+</div></button></a>
+
+
 </div><!-- /page -->
 
  <!------------------------ PAGE 2------------------------------->
  
-        <div data-role="page" id="two" style="background:#273e50;">
+        <div data-role="page" id="two">
 
 	
-	<div role="main" style="background-color:#167cc4; background-image:url(img/village-bg.png); background-repeat:no-repeat;">
-    
-  
-
-
+	<div role="main" class="ui-content" style="background-image:url(img/village-bg.png);
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:cover">
     <!--GRID START-->
-    <div class="ui-grid-a ui-content">
-    <div class="ui-block-a"><a href="#one" data-direction="reverse" class="ui-btn ui-icon-carat-l ui-btn-icon-left ui-shadow ui-btn-icon-notext ui-corner-all" style="margin-top:-5px;">carat-l</a></div>
-    <div class="ui-block-b"><a href="#leftpanel3" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-right ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all"  style="margin-right:15px;"data-role="button" role="button">Menu</a></div>
-
-    <div data-role="panel" id="leftpanel3" data-position="right" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
+    <div class="ui-grid-b">
+	<div class="ui-block-a center"> <!--<a href="#leftpanel3" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>-->
+    <div data-role="panel" id="leftpanel3" data-position="left" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
 
         <div class="ui-panel-inner"><h3>Left Panel: Overlay</h3><p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p><p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p><a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a></div>
         
-
+        
+        
+</div>
     </div>
-
+	
 	
 </div><!-- /grid-b -->
     <!--GRID ENDS-->
     <!--GRID START-->
+
+
+    <!--FIXED HEADER START-->
+   
+    
+    <div class="row"style="border:0px solid #fff;" id="panel-fixed-page1"  data-role="header" data-position="fixed" >
+  <div class="col-xs-4"><a href="#one" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
+  <div class="col-xs-4 headercontent">ABOUT ME</div>
+  <div class="col-xs-4"><a href="#inside-a" class="glyphicon glyphicon-menu-hamburger pull-right"  style="margin-right:15px; top:0px;"data-role="button" ></a></div>
+</div>
+
+ <!--FIXED HEADER END-->
+    <div data-role="panel" id="inside-a" data-position="right" data-display="overlay" data-theme="b" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-open">
+			<div class="ui-panel-inner"><ul data-role="listview" class="ui-listview">
+				<!--<li data-icon="back" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-back">Close</a></li>-->
+				<li class="ui-li-static ui-body-inherit">About Me</li>
+				<li class="ui-li-static ui-body-inherit">Services</li>
+				<li class="ui-li-static ui-body-inherit">Portfolio</li>
+                <li class="ui-li-static ui-body-inherit">Why Me?</li>
+				<li class="ui-li-static ui-body-inherit">Contact</li>
+			</ul></div>
+		</div>
+
+	
+
+    <!--GRID ENDS-->
+    <!--GRID START-->
     <div class="ui-grid-b" >
 	<div class="ui-block-a center"></div>
-	<div class="ui-block-b center"><img src="images/kush.jpg" class="img-circle" height="120px" width="120px">
+	<div class="ui-block-b center"><img src="img/kush.jpg" class="img-circle" height="120px" width="120px">
     <h1>Kush Malhotra</h1>
     <h3>Mobile Ui/Ux Designer</h3>
     </div>
@@ -141,34 +214,490 @@
         <!--GRID START-->
     <div class="ui-grid-a" style="padding-right:10px;">
 	<div class="ui-block-a"></div>
-    <div class="ui-block-b right"><img src="img/twitter.png"><img src="img/facebook.png"></div>
+    <div class="ui-block-b right"><a href="#popupLogin1" data-rel="popup" data-position-to="window" class="ui-btn ui-btn-inline " data-transition="pop"><img src="img/facebook.png"></a></div>
+    <div data-role="popup" id="popupLogin1" data-theme="b" style="background-color:#231f20;">
+    <form>
+        <div style="padding:10px 20px;" id="facebookpopup">
+<center><img src="img/facebook.png"></center>
+            <h3>Please sign in</h3>
+            <label for="un" class="ui-hidden-accessible">Username:</label>
+            <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+            <label for="pw" class="ui-hidden-accessible">Password:</label>
+            <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+            <button type="submit" class="ui-btn" style="background-color:#000;">Sign in</button>
+        </div>
+    </form>
+</div>
     </div>
    <!--GRID ENDS-->
 
         
 	</div><!-- /content -->
     
-<div class="arrow_box" style="margin-top:-15px;">
-            <h1 class="smallwhitehead">Services</h1>
-          </div>
           
-          <div class="ui-grid-a middbackground">A Web development process is a documented outline of the steps needed to be taken from start to finish in order to complete a typical Web design project. It divides and categorizes the work and then breaks these high-level sections into tasks and resources that can be used as a road map for each project. The planning is arguably the most important, because what’s decided and mapped here sets the stage for the entire project. This is also the stage that requires client interaction and the accompanying attention to detail.</div>
+          <div class="ui-grid-a middbackground">I am a UI/UX Designer having 11 years commercial experience working with clients from around the world, providing responsive front-end development, Mobile UI/UX Designs.The work I provide is of highest quality, fully responsive, and tested in a wide range of devices. I take great care to ensure each project is well-documented and easily maintainable so you can enhance a website as your company grows.Often front-end development of a website is overlooked, but being the part of your project that combines design, back-end development and the layer that your users interact with, from my experience, it is the most important to get right. <br><br><b> Clients often approach me when they need someone with the following skills:</b><br><br>
+         <ul class="list-group">
+  <li class="list-group-item">HTML5</li>
+  <li class="list-group-item">CSS3</li>
+  <li class="list-group-item">BOOTSTRAP</li>
+  <li class="list-group-item">ADOBE CREATIVE SUITE</li>
+  <li class="list-group-item">JAVASCRIPT</li>
+  <li class="list-group-item">PHONEGAP</li>
+  <li class="list-group-item">JQUERY MOBILE</li>
+</ul>
+
+I create responsive websites that allow the user to experience your website in the best and most appropriate way suited to the device they are using. By working using progressive enhancement, your website is delivered with a responsive layout that can best make use of the space available on the smallest to largest devices. Cross browser compatibility is ensured by using feature detection so older browsers still in use today provide a solid experience, whilst modern browsers can go the next step and enhance a user’s time spent on your site.
+         </div>
 <!-- /footer -->
 
 </div>
 
-<!-- /page -->
-
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
 </div><!-- /page -->
 
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
-</body>
+
+<!------------------------ PAGE 3------------------------------->
+ 
+        <div data-role="page" id="three">
+
+	
+	<div role="main" class="ui-content" style="background-image:url(img/village-bg.png);
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:cover">
+    <!--GRID START-->
+    <div class="ui-grid-b">
+	<div class="ui-block-a center"> <!--<a href="#leftpanel3" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>-->
+    <div data-role="panel" id="leftpanel4" data-position="left" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
+
+        <div class="ui-panel-inner"><h3>Left Panel: Overlay</h3><p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p><p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p><a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a></div>
+        
+        
+        
+</div>
+    </div>
+	
+	
+</div><!-- /grid-b -->
+    <!--GRID ENDS-->
+    <!--GRID START-->
+
+
+    <!--GRID START-->
+    
+   <!--FIXED HEADER START-->
+   
+    
+    <div class="row"style="border:0px solid #fff;" id="panel-fixed-page1"  data-role="header" data-position="fixed" >
+  <div class="col-xs-4"><a href="#one" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
+  <div class="col-xs-4 headercontent">SERVICES</div>
+  <div class="col-xs-4"><a href="#inside-a" class="glyphicon glyphicon-menu-hamburger pull-right"  style="margin-right:15px; top:0px;"data-role="button" ></a></div>
+</div>
+
+ <!--FIXED HEADER END-->
+
+    <div data-role="panel" id="inside-a" data-position="right" data-display="overlay" data-theme="b" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-open">
+			<div class="ui-panel-inner"><ul data-role="listview" class="ui-listview">
+				<!--<li data-icon="back" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-back">Close</a></li>-->
+				<li class="ui-li-static ui-body-inherit">About Me</li>
+				<li class="ui-li-static ui-body-inherit">Services</li>
+				<li class="ui-li-static ui-body-inherit">Portfolio</li>
+                <li class="ui-li-static ui-body-inherit">Why Me?</li>
+				<li class="ui-li-static ui-body-inherit">Contact</li>
+			</ul></div>
+		</div>
+
+
+    <!--GRID START-->
+    <div class="ui-grid-b" >
+	<div class="ui-block-a center"></div>
+	<div class="ui-block-b center"><img src="img/kush.jpg" class="img-circle" height="120px" width="120px">
+    <h1>Kush Malhotra</h1>
+    <h3>Mobile Ui/Ux Designer</h3>
+    </div>
+	<div class="ui-block-c center" ></div>
+</div><!-- /grid-b -->
+    <!--GRID ENDS-->
+    	
+        <!--GRID START-->
+    <div class="ui-grid-a" style="padding-right:10px;">
+	<div class="ui-block-a"></div>
+    <div class="ui-block-b right"><a href="#popupLogin2" data-rel="popup" data-position-to="window" class="ui-btn ui-btn-inline " data-transition="pop"><img src="img/facebook.png"></a></div>
+    <div data-role="popup" id="popupLogin2" data-theme="b" style="background-color:#231f20;">
+    <form>
+        <div style="padding:10px 20px;" id="facebookpopup">
+<center><img src="img/facebook.png"></center>
+            <h3>Please sign in</h3>
+            <label for="un" class="ui-hidden-accessible">Username:</label>
+            <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+            <label for="pw" class="ui-hidden-accessible">Password:</label>
+            <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+            <button type="submit" class="ui-btn" style="background-color:#000;">Sign in</button>
+        </div>
+    </form>
+</div>
+    </div>
+   <!--GRID ENDS-->
+
+        
+	</div><!-- /content -->
+
+          
+          <div class="ui-grid-a middbackground center">
+         <img src="img/ser1.png">
+         <h2>Responsive Website Design & Development</h2>
+         </div>
+         
+         <div class="ui-grid-a middbackground center">
+         <img src="img/ser2.png">
+         <h2>Mobile App Deisgn & Development</h2>
+         </div>
+         
+          <div class="ui-grid-a middbackground center">
+         <img src="img/ser3.png">
+         <h2>Branding & Graphic Design</h2>
+         </div>
+<!-- /footer -->
+
+</div>
+
+</div><!-- /page -->
+
+
+<!------------------------ PAGE 4------------------------------->
+ 
+        <div data-role="page" id="four">
+
+	
+	<div role="main" class="ui-content" style="background-image:url(img/village-bg.png);
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:cover">
+    <!--GRID START-->
+    <div class="ui-grid-b">
+	<div class="ui-block-a center"> <!--<a href="#leftpanel3" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>-->
+    <div data-role="panel" id="leftpanel5" data-position="left" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
+
+        <div class="ui-panel-inner"><h3>Left Panel: Overlay</h3><p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p><p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p><a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a></div>
+        
+        
+        
+</div>
+    </div>
+	
+	
+</div><!-- /grid-b -->
+    <!--GRID ENDS-->
+    <!--GRID START-->
+
+<!--FIXED HEADER START-->
+   
+    
+    <div class="row"style="border:0px solid #fff;" id="panel-fixed-page1"  data-role="header" data-position="fixed" >
+  <div class="col-xs-4"><a href="#one" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
+  <div class="col-xs-4 headercontent">PORTFOLIO</div>
+  <div class="col-xs-4"><a href="#inside-a" class="glyphicon glyphicon-menu-hamburger pull-right"  style="margin-right:15px; top:0px;"data-role="button" ></a></div>
+</div>
+
+ <!--FIXED HEADER END-->
+   
+    <div data-role="panel" id="inside-a" data-position="right" data-display="overlay" data-theme="b" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-open">
+			<div class="ui-panel-inner"><ul data-role="listview" class="ui-listview">
+				<!--<li data-icon="back" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-back">Close</a></li>-->
+				<li class="ui-li-static ui-body-inherit">About Me</li>
+				<li class="ui-li-static ui-body-inherit">Services</li>
+				<li class="ui-li-static ui-body-inherit">Portfolio</li>
+                <li class="ui-li-static ui-body-inherit">Why Me?</li>
+				<li class="ui-li-static ui-body-inherit">Contact</li>
+			</ul></div>
+		</div>
+
+
+    <!--GRID START-->
+    <div class="ui-grid-b" >
+	<div class="ui-block-a center"></div>
+	<div class="ui-block-b center"><img src="img/kush.jpg" class="img-circle" height="120px" width="120px">
+    <h1>Kush Malhotra</h1>
+    <h3>Mobile Ui/Ux Designer</h3>
+    </div>
+	<div class="ui-block-c center" ></div>
+</div><!-- /grid-b -->
+    <!--GRID ENDS-->
+    	
+        <!--GRID START-->
+    <div class="ui-grid-a" style="padding-right:10px;">
+	<div class="ui-block-a"></div>
+    <div class="ui-block-b right"><a href="#popupLogin3" data-rel="popup" data-position-to="window" class="ui-btn ui-btn-inline " data-transition="pop"><img src="img/facebook.png"></a></div>
+    <div data-role="popup" id="popupLogin3" data-theme="b" style="background-color:#231f20;">
+    <form>
+        <div style="padding:10px 20px;" id="facebookpopup">
+<center><img src="img/facebook.png"></center>
+            <h3>Please sign in</h3>
+            <label for="un" class="ui-hidden-accessible">Username:</label>
+            <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+            <label for="pw" class="ui-hidden-accessible">Password:</label>
+            <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+            <button type="submit" class="ui-btn" style="background-color:#000;">Sign in</button>
+        </div>
+    </form>
+</div>
+    </div>
+   <!--GRID ENDS-->
+
+        
+	</div><!-- /content -->
+
+          
+          <div class="ui-grid-a middbackground">Content comes here...
+         </div>
+<!-- /footer -->
+
+</div>
+
+</div><!-- /page -->
+
+<!------------------------ PAGE 5------------------------------->
+ 
+        <div data-role="page" id="five">
+
+	
+	<div role="main" class="ui-content" style="background-image:url(img/village-bg.png);
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:cover">
+    <!--GRID START-->
+    <div class="ui-grid-b">
+	<div class="ui-block-a center"> <!--<a href="#leftpanel3" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>-->
+    <div data-role="panel" id="leftpanel7" data-position="left" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
+
+        <div class="ui-panel-inner"><h3>Left Panel: Overlay</h3><p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p><p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p><a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a></div>
+        
+        
+        
+</div>
+    </div>
+	
+	
+</div><!-- /grid-b -->
+    <!--GRID ENDS-->
+    <!--GRID START-->
+
+<!--FIXED HEADER START-->
+   
+    
+    <div class="row"style="border:0px solid #fff;" id="panel-fixed-page1"  data-role="header" data-position="fixed" >
+  <div class="col-xs-4"><a href="#one" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
+  <div class="col-xs-4 headercontent">WHY ME?</div>
+  <div class="col-xs-4"><a href="#inside-a" class="glyphicon glyphicon-menu-hamburger pull-right"  style="margin-right:15px; top:0px;"data-role="button" ></a></div>
+</div>
+
+ <!--FIXED HEADER END-->
+   
+
+    <div data-role="panel" id="inside-a" data-position="right" data-display="overlay" data-theme="b" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-open">
+			<div class="ui-panel-inner"><ul data-role="listview" class="ui-listview">
+				<!--<li data-icon="back" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-back">Close</a></li>-->
+				<li class="ui-li-static ui-body-inherit">About Me</li>
+				<li class="ui-li-static ui-body-inherit">Services</li>
+				<li class="ui-li-static ui-body-inherit">Portfolio</li>
+                <li class="ui-li-static ui-body-inherit">Why Me?</li>
+				<li class="ui-li-static ui-body-inherit">Contact</li>
+			</ul></div>
+		</div>
+
+
+    <!--GRID START-->
+    <div class="ui-grid-b" >
+	<div class="ui-block-a center"></div>
+	<div class="ui-block-b center"><img src="img/kush.jpg" class="img-circle" height="120px" width="120px">
+    <h1>Kush Malhotra</h1>
+    <h3>Mobile Ui/Ux Designer</h3>
+    </div>
+	<div class="ui-block-c center" ></div>
+</div><!-- /grid-b -->
+    <!--GRID ENDS-->
+    	
+        <!--GRID START-->
+    <div class="ui-grid-a" style="padding-right:10px;">
+	<div class="ui-block-a"></div>
+   <div class="ui-block-b right"><a href="#popupLogin4" data-rel="popup" data-position-to="window" class="ui-btn ui-btn-inline " data-transition="pop"><img src="img/facebook.png"></a></div>
+    <div data-role="popup" id="popupLogin4" data-theme="b" style="background-color:#231f20;">
+    <form>
+        <div style="padding:10px 20px;" id="facebookpopup">
+<center><img src="img/facebook.png"></center>
+            <h3>Please sign in</h3>
+            <label for="un" class="ui-hidden-accessible">Username:</label>
+            <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+            <label for="pw" class="ui-hidden-accessible">Password:</label>
+            <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+            <button type="submit" class="ui-btn" style="background-color:#000;">Sign in</button>
+        </div>
+    </form>
+</div>
+    </div>
+   <!--GRID ENDS-->
+
+        
+	</div><!-- /content -->
+    
+
+          
+          <div class="ui-grid-a middbackground">
+       <div class="container">
+	<div class="row">
+    
+		<div class="col-md-12">
+          <div class="update-nag">
+            <div class="update-split">1</div>
+            <div class="update-text" style="color:#fff;">I build powerful websites.
+            <p style="color:#959293;">If you need a site with all the bells and whistles, contact me. Database integration, video, audio, ios and android integration, e-commerce — no problem.</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-12">
+          <div class="update-nag">
+            <div class="update-split update-info">2</div>
+            <div class="update-text" style="color:#fff;">I emphasize simplicity.
+            <p style="color:#959293;">Some firms love to build complicated sites. Not me. I choose the simplest tool that will effectively accomplish a task. Simple sites load faster, are easy to use and are less prone to problems.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="update-nag">
+            <div class="update-split update-success">3</div>
+            <div class="update-text" style="color:#fff;">I am affordable.
+            <p style="color:#959293;">My Design has very low overhead. No fancy office in Buckhead, no snooty receptionist, no latte-sipping sales weasels. Just hard-working Internet professionals chained to their computers. (Just kidding. They're not really chained to their computers. They're chained to their desks.)</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-12">
+          <div class="update-nag">
+            <div class="update-split update-danger">4</div>
+            <div class="update-text" style="color:#fff;">I am friendly.
+            <p style="color:#959293;">Most of our clients have fun working with us. We make the web design process easy and pleasant. We speak in plain English, not techno-babble. And we love what we do for a living.</p>
+            </div>
+          </div>
+        </div>
+        
+                <div class="col-md-12">
+          <div class="update-nag">
+            <div class="update-split update-danger">5</div>
+            <div class="update-text" style="color:#fff;">You're the boss.
+            <p style="color:#959293;">We'll give you options and the tools and information to make good choices. We'll give you our recommendations, but ultimately, every decision about your website is yours.</p>
+            </div>
+          </div>
+        </div>
+        
+	</div>
+</div>
+</div>
+         </div>
+<!-- /footer -->
+
+</div>
+
+</div><!-- /page -->
+
+
+<!------------------------ PAGE 6------------------------------->
+ 
+        <div data-role="page" id="six">
+
+	
+	<div role="main" class="ui-content" style="background-image:url(img/village-bg.png);
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:cover">
+    <!--GRID START-->
+    <div class="ui-grid-b">
+	<div class="ui-block-a center"> <!--<a href="#leftpanel3" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>-->
+    <div data-role="panel" id="leftpanel3" data-position="left" data-display="overlay" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
+
+        <div class="ui-panel-inner"><h3>Left Panel: Overlay</h3><p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p><p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p><a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a></div>
+        
+        
+        
+</div>
+    </div>
+	
+	
+</div><!-- /grid-b -->
+    <!--GRID ENDS-->
+    <!--GRID START-->
+
+
+   <!--FIXED HEADER START-->
+   
+    
+    <div class="row"style="border:0px solid #fff;" id="panel-fixed-page1"  data-role="header" data-position="fixed" >
+  <div class="col-xs-4"><a href="#one" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
+  <div class="col-xs-4 headercontent">CONTACT</div>
+  <div class="col-xs-4"><a href="#inside-a" class="glyphicon glyphicon-menu-hamburger pull-right"  style="margin-right:15px; top:0px;"data-role="button" ></a></div>
+</div>
+
+ <!--FIXED HEADER END-->
+
+    <div data-role="panel" id="inside-a" data-position="right" data-display="overlay" data-theme="b" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-open">
+			<div class="ui-panel-inner"><ul data-role="listview" class="ui-listview">
+				<!--<li data-icon="back" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-back">Close</a></li>-->
+				<li class="ui-li-static ui-body-inherit">About Me</li>
+				<li class="ui-li-static ui-body-inherit">Services</li>
+				<li class="ui-li-static ui-body-inherit">Portfolio</li>
+                <li class="ui-li-static ui-body-inherit">Why Me?</li>
+				<li class="ui-li-static ui-body-inherit">Contact</li>
+			</ul></div>
+		</div>
+
+
+    <!--GRID START-->
+    <div class="ui-grid-b" >
+	<div class="ui-block-a center"></div>
+	<div class="ui-block-b center"><img src="img/kush.jpg" class="img-circle" height="120px" width="120px">
+    <h1>Kush Malhotra</h1>
+    <h3>Mobile Ui/Ux Designer</h3>
+    </div>
+	<div class="ui-block-c center" ></div>
+</div><!-- /grid-b -->
+    <!--GRID ENDS-->
+    	
+        <!--GRID START-->
+    <div class="ui-grid-a" style="padding-right:10px;">
+	<div class="ui-block-a"></div>
+   <div class="ui-block-b right"><a href="#popupLogin5" data-rel="popup" data-position-to="window" class="ui-btn ui-btn-inline " data-transition="pop"><img src="img/facebook.png"></a></div>
+    <div data-role="popup" id="popupLogin5" data-theme="b" style="background-color:#231f20;">
+    <form>
+        <div style="padding:10px 20px;" id="facebookpopup">
+<center><img src="img/facebook.png"></center>
+            <h3>Please sign in</h3>
+            <label for="un" class="ui-hidden-accessible">Username:</label>
+            <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+            <label for="pw" class="ui-hidden-accessible">Password:</label>
+            <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+            <button type="submit" class="ui-btn" style="background-color:#000;">Sign in</button>
+        </div>
+    </form>
+</div>
+    </div>
+   <!--GRID ENDS-->
+        
+	</div><!-- /content -->
+
+          
+          <div class="ui-grid-a middbackground">Content comes here...
+         </div>
+<!-- /footer -->
+
+</div>
+
+</div><!-- /page -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+
 
 </html>
