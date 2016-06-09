@@ -1001,6 +1001,8 @@ h2, h3 {
 	color:#fff;
 	font-size:16px;
 	text-decoration:none;
+	margin-left:10px;
+	margin-top:30px !important;
 }
 .glyphicon-menu-right:before {
 	content: "\e258";
@@ -4457,6 +4459,7 @@ to {
 	display: block;
 	padding: 10px 15px;
 	margin-bottom: -1px;
+	font-weight:bold;
 	background-color: #403c43;
 	border: 1px solid #3e3a41
 }
