@@ -51,12 +51,13 @@
     <title>Kush Malhotra</title>
 </head>
 
-  <body>
+   <body >
+    
     
  
         
         <!------------------------ PAGE 1------------------------------->
-        <div data-role="page" id="one">
+        <div data-role="page"  class="demo-page" id="page1" data-prev="" data-next="#page2">
 
 	
 	<div role="main" class="ui-content" style="background-image:url(img/village-bg.png);
@@ -113,7 +114,7 @@
 	</div><!-- /content -->
     
 
-<a href="#two" data-transition="slide" style="text-decoration:none; "><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
+<a href="#page2" data-transition="slide" style="text-decoration:none; "><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
   <div class="col-xs-2" align="left"><img src="img/tabicon1.png"></div>
   <div class="col-xs-8 tabname" align="left" style="margin-top:10px;">ABOUT ME</div>
   <div class="col-xs-2" align="right" ><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></div>
@@ -121,26 +122,26 @@
 
 
 
-<a href="#three" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
+<a href="#page3" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
   <div class="col-xs-2" align="left"><img src="img/tabicon2.png"></div>
   <div class="col-xs-8 tabname" align="left" style="margin-top:10px;">SERVICES</div>
   <div class="col-xs-2" align="right"><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></div>
 </div></button></a>
 
 
-<a href="#four" data-transition="slide" style="text-decoration:none; "><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
+<a href="#page4" data-transition="slide" style="text-decoration:none; "><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
   <div class="col-xs-2" align="left"><img src="img/tabicon3.png"></div>
   <div class="col-xs-8 tabname" align="left" style="margin-top:10px;">PORTFOLIO</div>
   <div class="col-xs-2" align="right"><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></div>
 </div></button></a>
 
-<a href="#five" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
+<a href="#page5" data-transition="slide" style="text-decoration:none;"><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
   <div class="col-xs-2" align="left"><img src="img/tabicon4.png"></div>
   <div class="col-xs-8 tabname" align="left" style="margin-top:10px;">WHY ME?</div>
   <div class="col-xs-2" align="right"><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></div>
 </div></button></a>
 
-<a href="#six" data-transition="slide" style="text-decoration:none; "><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
+<a href="#page6" data-transition="slide" style="text-decoration:none; "><button class="tablink ui-btn ui-btn-icon-right "><div class="row">
   <div class="col-xs-2" align="left"><img src="img/tabicon5.png"></div>
   <div class="col-xs-8 tabname" align="left" style="margin-top:10px;">CONTACT</div>
   <div class="col-xs-2" align="right"><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></div>
@@ -151,7 +152,7 @@
 
  <!------------------------ PAGE 2------------------------------->
  
-        <div data-role="page" id="two">
+        <div data-role="page" id="page2" data-prev="#page1" data-next="#page3">
 
 	
 	<div role="main" class="ui-content" style="background-image:url(img/village-bg.png);
@@ -180,7 +181,7 @@
    
     
     <div class="row"style="border:0px solid #fff;" id="panel-fixed-page1"  data-role="header" data-position="fixed" >
-  <div class="col-xs-4"><a href="#one" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
+  <div class="col-xs-4"><a href="#page1" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
   <div class="col-xs-4 headercontent">ABOUT ME</div>
   <div class="col-xs-4"><a href="#inside-a" class="glyphicon glyphicon-menu-hamburger pull-right"  style="margin-right:15px; top:0px;"data-role="button" ></a></div>
 </div>
@@ -257,7 +258,7 @@ I create responsive websites that allow the user to experience your website in t
 
 <!------------------------ PAGE 3------------------------------->
  
-        <div data-role="page" id="three">
+        <div data-role="page" id="page3" data-prev="#page2" data-next="#page4">
 
 	
 	<div role="main" class="ui-content" style="background-image:url(img/village-bg.png);
@@ -287,8 +288,8 @@ I create responsive websites that allow the user to experience your website in t
    <!--FIXED HEADER START-->
    
     
-    <div class="row"style="border:0px solid #fff;" id="panel-fixed-page1"  data-role="header" data-position="fixed" >
-  <div class="col-xs-4"><a href="#one" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
+    <div class="row" style="border:0px solid #fff; min-height:50px;" id="panel-fixed-page1"  data-role="header" data-position="fixed" >
+  <div class="col-xs-4"><a href="#page1" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
   <div class="col-xs-4 headercontent">SERVICES</div>
   <div class="col-xs-4"><a href="#inside-a" class="glyphicon glyphicon-menu-hamburger pull-right"  style="margin-right:15px; top:0px;"data-role="button" ></a></div>
 </div>
@@ -365,7 +366,7 @@ I create responsive websites that allow the user to experience your website in t
 
 <!------------------------ PAGE 4------------------------------->
  
-        <div data-role="page" id="four">
+        <div data-role="page" id="page4"  data-prev="#page3" data-next="#page5">
 
 	
 	<div role="main" class="ui-content" style="background-image:url(img/village-bg.png);
@@ -393,7 +394,7 @@ I create responsive websites that allow the user to experience your website in t
    
     
     <div class="row"style="border:0px solid #fff;" id="panel-fixed-page1"  data-role="header" data-position="fixed" >
-  <div class="col-xs-4"><a href="#one" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
+  <div class="col-xs-4"><a href="#page3" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
   <div class="col-xs-4 headercontent">PORTFOLIO</div>
   <div class="col-xs-4"><a href="#inside-a" class="glyphicon glyphicon-menu-hamburger pull-right"  style="margin-right:15px; top:0px;"data-role="button" ></a></div>
 </div>
@@ -457,7 +458,7 @@ I create responsive websites that allow the user to experience your website in t
 
 <!------------------------ PAGE 5------------------------------->
  
-        <div data-role="page" id="five">
+        <div data-role="page" id="page5"  data-prev="#page4" data-next="#page6">
 
 	
 	<div role="main" class="ui-content" style="background-image:url(img/village-bg.png);
@@ -485,7 +486,7 @@ I create responsive websites that allow the user to experience your website in t
    
     
     <div class="row"style="border:0px solid #fff;" id="panel-fixed-page1"  data-role="header" data-position="fixed" >
-  <div class="col-xs-4"><a href="#one" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
+  <div class="col-xs-4"><a href="#page4" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
   <div class="col-xs-4 headercontent">WHY ME?</div>
   <div class="col-xs-4"><a href="#inside-a" class="glyphicon glyphicon-menu-hamburger pull-right"  style="margin-right:15px; top:0px;"data-role="button" ></a></div>
 </div>
@@ -544,48 +545,48 @@ I create responsive websites that allow the user to experience your website in t
           <div class="ui-grid-a middbackground">
        <div class="container">
 	<div class="row">
-    
+
 		<div class="col-md-12">
           <div class="update-nag">
             <div class="update-split">1</div>
             <div class="update-text" style="color:#fff;">I build powerful websites.
-            <p style="color:#959293;">If you need a site with all the bells and whistles, contact me. Database integration, video, audio, ios and android integration, e-commerce — no problem.</p>
+            <p style="color:#959293; padding:10px;">If you need a site with all the bells and whistles, contact me. Database integration, video, audio, ios and android integration, e-commerce — no problem.</p>
             </div>
           </div>
         </div>
-    
+    <br>
         <div class="col-md-12">
           <div class="update-nag">
             <div class="update-split update-info">2</div>
             <div class="update-text" style="color:#fff;">I emphasize simplicity.
-            <p style="color:#959293;">Some firms love to build complicated sites. Not me. I choose the simplest tool that will effectively accomplish a task. Simple sites load faster, are easy to use and are less prone to problems.</p>
+            <p style="color:#959293; padding:10px;">Some firms love to build complicated sites. Not me. I choose the simplest tool that will effectively accomplish a task. Simple sites load faster, are easy to use and are less prone to problems.</p>
             </div>
           </div>
         </div>
-
+<br>
         <div class="col-md-12">
           <div class="update-nag">
             <div class="update-split update-success">3</div>
             <div class="update-text" style="color:#fff;">I am affordable.
-            <p style="color:#959293;">My Design has very low overhead. No fancy office in Buckhead, no snooty receptionist, no latte-sipping sales weasels. Just hard-working Internet professionals chained to their computers. (Just kidding. They're not really chained to their computers. They're chained to their desks.)</p>
+            <p style="color:#959293; padding:10px;">My Design has very low overhead. No fancy office in Buckhead, no snooty receptionist, no latte-sipping sales weasels. Just hard-working Internet professionals chained to their computers. (Just kidding. They're not really chained to their computers. They're chained to their desks.)</p>
             </div>
           </div>
         </div>
-        
+        <br>
         <div class="col-md-12">
           <div class="update-nag">
             <div class="update-split update-danger">4</div>
             <div class="update-text" style="color:#fff;">I am friendly.
-            <p style="color:#959293;">Most of our clients have fun working with us. We make the web design process easy and pleasant. We speak in plain English, not techno-babble. And we love what we do for a living.</p>
+            <p style="color:#959293; padding:10px;">Most of our clients have fun working with us. We make the web design process easy and pleasant. We speak in plain English, not techno-babble. And we love what we do for a living.</p>
             </div>
           </div>
         </div>
-        
+        <br>
                 <div class="col-md-12">
           <div class="update-nag">
             <div class="update-split update-danger">5</div>
             <div class="update-text" style="color:#fff;">You're the boss.
-            <p style="color:#959293;">We'll give you options and the tools and information to make good choices. We'll give you our recommendations, but ultimately, every decision about your website is yours.</p>
+            <p style="color:#959293; padding:10px;">We'll give you options and the tools and information to make good choices. We'll give you our recommendations, but ultimately, every decision about your website is yours.</p>
             </div>
           </div>
         </div>
@@ -603,7 +604,7 @@ I create responsive websites that allow the user to experience your website in t
 
 <!------------------------ PAGE 6------------------------------->
  
-        <div data-role="page" id="six">
+        <div data-role="page" id="page6"  data-prev="#page5" data-next="">
 
 	
 	<div role="main" class="ui-content" style="background-image:url(img/village-bg.png);
@@ -632,7 +633,7 @@ I create responsive websites that allow the user to experience your website in t
    
     
     <div class="row"style="border:0px solid #fff;" id="panel-fixed-page1"  data-role="header" data-position="fixed" >
-  <div class="col-xs-4"><a href="#one" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
+  <div class="col-xs-4"><a href="#page5" data-transition="slide" data-direction="reverse" class="glyphicon glyphicon-menu-left pull-left" style="text-decoration:none;"></a></div>
   <div class="col-xs-4 headercontent">CONTACT</div>
   <div class="col-xs-4"><a href="#inside-a" class="glyphicon glyphicon-menu-hamburger pull-right"  style="margin-right:15px; top:0px;"data-role="button" ></a></div>
 </div>
@@ -692,12 +693,73 @@ I create responsive websites that allow the user to experience your website in t
 </div>
 
 </div><!-- /page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>//<![CDATA[
+
+function navnext( next ) {
+    $( ":mobile-pagecontainer" ).pagecontainer( "change", next, {
+        transition: "slide"
+    });
+}
+function navprev( prev ) {
+    $( ":mobile-pagecontainer" ).pagecontainer( "change", prev, {
+        transition: "slide",
+        reverse: true
+    });
+}
+
+
+$( document ).one( "pagecreate", "#page1", function() {
+    // Handler for navigating to the next page
+    // Navigate to the next page on swipeleft
+    $( document ).on( "swipeleft", ".ui-page", function( event ) {
+        // Get the filename of the next page. We stored that in the data-next
+        // attribute in the original markup.
+        var next = $( this ).jqmData( "next" );
+        if ( next ) {
+            navnext( next );
+        }
+    });
+    // The same for the navigating to the previous page
+    $( document ).on( "swiperight", ".ui-page", function( event ) {
+        var prev = $( this ).jqmData( "prev" );
+        if (prev) {
+            navprev( prev );
+        }
+    });
+});
+
+//]]> 
+
+</script>
+
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
     </body>
+
 
 
 </html>
