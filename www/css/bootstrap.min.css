@@ -3,7 +3,7 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html {
-	font-family: sans-serif;
+	
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%
 }
@@ -933,7 +933,8 @@ h2, h3 {
 	content: "\e235"
 }
 .glyphicon-menu-hamburger:before {
-	content: "\e236"
+	content: "\e236";
+	font-size:22px;
 }
 .glyphicon-modal-window:before {
 	content: "\e237"
@@ -999,7 +1000,7 @@ h2, h3 {
 .glyphicon-menu-left:before {
 	content: "\e257";
 	color:#fff;
-	font-size:16px;
+	font-size:22px;
 	text-decoration:none;
 	margin-left:10px;
 	margin-top:30px !important;
