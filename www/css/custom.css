@@ -31,13 +31,14 @@ h3{
 	
 	
 	}
-	
+
+
 .arrow_box1 {
 	position: relative;
 	
 }
 .arrow_box1:after {
-	bottom: 100%;
+	
 	left: 50%;
 	border: solid transparent;
 	content: " ";
@@ -86,6 +87,7 @@ h3{
 	font-size:14px;
 	padding:10px;
 	text-align:center;
+	margin-top:10px;
 	
 	}
 	
@@ -202,3 +204,60 @@ h2{
   padding-left: 45px;
 
 }
+
+
+/***** MAGIC LINE  *******/
+
+
+#page1, #page2, #page3, #page4, #page5, #page6{
+	top:33px;
+	color:#000;
+	bottom:-83px;
+	overflow-y:scroll;
+	border:0px solid #fff;
+	z-index:-1;
+	height:80%;
+	padding:10px;
+	background-image:url(../img/village-bg.png);
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:cover;
+
+	
+	
+	
+}
+
+
+   .nav-wrap { background-color:#293448; position:fixed; width:100%;
+height:50px; z-index:1000px;
+-moz-box-shadow: 0px 1px 1px #232e41;
+-webkit-box-shadow: 0px 1px 1px #232e41;
+box-shadow-bottom: 2px #232e41;
+color:#fff; }
+#example-one { 
+    height:50px;
+    margin: 0 auto; 
+    list-style: none; 
+    position: relative; 
+ }
+#example-one li { display: inline-block; }
+#example-one li a { 
+    color: #bbb; 
+    font-size: 14px; 
+    display: block; 
+    float: left; 
+      text-decoration: none; 
+    text-transform: uppercase; 
+}
+#example-one li a:hover { color: white; }
+#magic-line { 
+    position: absolute; 
+    bottom: -2px; 
+    left: 0; 
+    width: 100px; 
+    height: 3px; 
+    background: #02070f; 
+}
+
+
