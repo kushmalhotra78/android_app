@@ -8,6 +8,8 @@ body, input, select, textarea, button, .ui-btn {
 	line-height: 1.3;
 	
 }
+
+
 legend, .ui-input-text input, .ui-input-search input {
 	color: inherit;
 	text-shadow: inherit
@@ -105,7 +107,8 @@ legend, .ui-input-text input, .ui-input-search input {
 .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
 	background-color: #403c43;
 	color: #333;
-		font-weight: 700
+		font-weight: 700;
+		height:60px;
 }
 .ui-bar-a {
 	border-width: px;
@@ -118,7 +121,7 @@ legend, .ui-input-text input, .ui-input-search input {
 
 }
 .ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
-	border-color: #ddd;
+	
 	color: #333;
 	text-shadow: 0 0px 0 #f3f3f3
 }
@@ -145,14 +148,13 @@ legend, .ui-input-text input, .ui-input-search input {
 }
 .ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head+body .ui-btn.ui-btn-a:hover {
 	
-	
-	color: #fff;
+
 	
 }
 .ui-page-theme-a .ui-btn:active, html .ui-bar-a .ui-btn:active, html .ui-body-a .ui-btn:active, html body .ui-group-theme-a .ui-btn:active, html head+body .ui-btn.ui-btn-a:active {
 
 	border-color: #ddd;
-	color: #fff;
+	color: #000;
 	
 }
 .ui-page-theme-a .ui-btn.ui-btn-active, html .ui-bar-a .ui-btn.ui-btn-active, html .ui-body-a .ui-btn.ui-btn-active, html body .ui-group-theme-a .ui-btn.ui-btn-active, html head+body .ui-btn.ui-btn-a.ui-btn-active, .ui-page-theme-a .ui-checkbox-on:after, html .ui-bar-a .ui-checkbox-on:after, html .ui-body-a .ui-checkbox-on:after, html body .ui-group-theme-a .ui-checkbox-on:after, .ui-btn.ui-checkbox-on.ui-btn-a:after, .ui-page-theme-a .ui-flipswitch-active, html .ui-bar-a .ui-flipswitch-active, html .ui-body-a .ui-flipswitch-active, html body .ui-group-theme-a .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active, .ui-page-theme-a .ui-slider-track .ui-btn-active, html .ui-bar-a .ui-slider-track .ui-btn-active, html .ui-body-a .ui-slider-track .ui-btn-active, html body .ui-group-theme-a .ui-slider-track .ui-btn-active, html body div.ui-slider-track.ui-body-a .ui-btn-active {
@@ -2432,7 +2434,8 @@ opacity:.0001
 
 }
 .ui-content .ui-listview, .ui-panel-inner>.ui-listview {
-	margin: -1em
+	margin: -1em;
+	
 }
 .ui-content .ui-listview-inset, .ui-panel-inner>.ui-listview-inset {
 	margin: 1em 0
@@ -2447,7 +2450,8 @@ opacity:.0001
 	display: block;
 	position: relative;
 	background-color:
-	overflow: visible
+	overflow: visible;
+	
 }
 .ui-listview>.ui-li-static, .ui-listview>.ui-li-divider, .ui-listview>li>a.ui-btn {
 	margin: 0;
@@ -3225,7 +3229,7 @@ th.ui-table-priority-6, td.ui-table-priority-6, th.ui-table-priority-5, td.ui-ta
 	z-index: 1001
 }
 .ui-panel-inner {
-	padding: 1em
+	padding: 0em;
 }
 .ui-panel-page-container {
 	overflow-x: visible
