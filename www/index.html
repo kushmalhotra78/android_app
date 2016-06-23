@@ -35,7 +35,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
 
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
@@ -46,16 +46,6 @@
 		});
 	</script>
 
-
-
-  
-
-  
-
-  <style type="text/css">
- 
-
-  </style>
 
 
 
@@ -104,13 +94,13 @@ $(function() {
   
 </head>
 
-<body style="overflow:hidden;" class="hidden-lg" >
+<body style="overflow:hidden;">
 
  
  <div class="nav-wrap" style="z-index:1000;">
  <ul  id="example-one">
     <li style="border:0px solid #fff; width:16%;  margin-left:-30px;" class="current_page_item" ><a pageID="page1" href="#page1"><img src="img/headicon0.png"></a></li>
-	 <li style="border:0px solid #fff; width:16%;"><a pageID="page2" href="#page2"><img src="img/headicon2.png"></a></li>
+	 <li style="border:0px solid #fff; width:16%;"><a pageID="page2" href="#page2" ><img src="img/headicon2.png"></a></li>
     <li style="border:0px solid #fff; width:16%;"><a pageID="page3" href="#page3"><img src="img/headicon1.png"></a></li>
     <li style="border:0px solid #fff; width:16%;"><a pageID="page4" href="#page4"><img src="img/headicon3.png"></a></li>
     <li style="border:0px solid #fff; width:16%;"><a pageID="page5" href="#page5"><img src="img/headicon5.png"></a></li>
@@ -120,13 +110,14 @@ $(function() {
  
  
         
-  <div data-role="panel" id="right_panel_about_page" data-position="right" data-display="overlay" data-theme="b" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-open">
+ <div data-role="panel" id="right_panel_about_page" data-position="right" data-display="overlay" data-theme="b" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-open">
 			<div class="ui-panel-inner"><ul data-role="listview" >
 				<!--<li data-icon="back" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-back">Close</a></li>-->
 				<a href="#page1"  onclick="return runMyFunction(0);" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">HOME</span></li></a>
                 <a href="#page2" onclick="return runMyFunction(1);" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">Skills</span></li></a>
 				<a href="#page3" onclick="return runMyFunction(2);" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">About ME</span></li></a>
-				<a href="#page4" onclick="return runMyFunction(3);" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">Portfolio</span></li></a>
+                 <a href="#page6"  style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">Why ME?</span></li></a>
+                <a href="#page4" onclick="return runMyFunction(3);" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">Portfolio</span></li></a>
 				<a href="#page5" onclick="return runMyFunction(4);" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">Contact</span></li></a>
 			</ul></div>
 		</div>
@@ -141,7 +132,7 @@ $(function() {
       <!------------------------ BOX 1 Kush Malhotra UI/UX Designer ------------------------------->  
   <div class="col-xs-12 imgcolor">
   <div align="center" class="kushimgborder"><img src="img/kush.jpg" class="img-circle img-responsive" width="60%" height="60%"></div>
-  <h1>Kush Malhotra</h1>
+  <h1 >Kush Malhotra</h1>
   <h3>UI/UX, Usability, Design & Development</h3>
   </div>
 
@@ -213,7 +204,7 @@ $(function() {
   <div class="col-xs-2" align="right"></div>
 </div></button></a>
  </div>
-<div style="font-size:14px; color:#c9c9c8; margin-top:40px;">I am a UI/UX Designer having 11 years commercial experience working with clients from around the world, providing responsive front-end development, Mobile UI/UX Designs.The work I provide is of highest quality, fully responsive, and tested in a wide range of devices. I take great care to ensure each project is well-documented and easily maintainable so you can enhance a website as your company grows.Often front-end development of a website is overlooked, but being the part of your project that combines design, back-end development and the layer that your users interact with, from my experience, it is the most important to get right.
+<div style="font-size:14px; color:#c9c9c8; margin-top:40px;">I am a <strong style="color:#0F3;">UI/UX Designer/Developer</strong> having 11 years commercial experience working with clients from around the world, providing responsive front-end development, Mobile UI/UX Designs.The work I provide is of highest quality, fully responsive, and tested in a wide range of devices. I take great care to ensure each project is well-documented and easily maintainable so you can enhance a website as your company grows.Often front-end development of a website is overlooked, but being the part of your project that combines design, back-end development and the layer that your users interact with, from my experience, it is the most important to get right.
 
 <br><br>
 I create responsive websites that allow the user to experience your website in the best and most appropriate way suited to the device they are using. By working using progressive enhancement, your website is delivered with a responsive layout that can best make use of the space available on the smallest to largest devices. Cross browser compatibility is ensured by using feature detection so older browsers still in use today provide a solid experience, whilst modern browsers can go the next step and enhance a user’s time spent on your site.
@@ -234,7 +225,7 @@ I create responsive websites that allow the user to experience your website in t
  </div>-->
  <br>
  <!------------------------CRAOUSAL START------------------------------->  
-  <div class="ui-grid-a middbackground" style="margin-top:-20px;">
+  <div class="middbackground" style="margin-top:-20px;">
           
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -252,14 +243,14 @@ I create responsive websites that allow the user to experience your website in t
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active"  align="center">
-    <h2>iPad Splash Screen</h2>
+    <h2>iPad App Designing</h2>
       <img src="img/port1.jpg" alt="...">
       <div class="carousel-caption">
 
       </div>
     </div>
     <div class="item"  align="center">
-    <h2>iPad Splash Screen</h2>
+     <h2>iPad App Designing</h2>
       <img src="img/port2.jpg" alt="...">
       <div class="carousel-caption">
     
@@ -267,7 +258,7 @@ I create responsive websites that allow the user to experience your website in t
     </div>
     
  <div class="item"  align="center">
- <h2>Office Locator: Mobile App</h2>
+ <h2>Office Locator: Mobile App (Design & Development)</h2>
       <img src="img/port3.png" alt="...">
       <div class="carousel-caption">
     
@@ -275,7 +266,7 @@ I create responsive websites that allow the user to experience your website in t
     </div>
     
      <div class="item"  align="center">
-     <h2>eServives: Mobile App</h2>
+     <h2>eServives: Mobile App (Design & Development)</h2>
       <img src="img/port4.png" alt="...">
       <div class="carousel-caption">
     
@@ -283,7 +274,7 @@ I create responsive websites that allow the user to experience your website in t
     </div>
     
       <div class="item"  align="center">
-        <h2>iPad Splash Screen</h2>
+       <h2>iPad App Designing</h2>
       <img src="img/port5.png" alt="...">
       <div class="carousel-caption">
     
@@ -291,7 +282,7 @@ I create responsive websites that allow the user to experience your website in t
     </div>
       
        <div class="item"  align="center">
-         <h2>App Icon</h2>
+         <h2>App Icon Designing</h2>
       <img src="img/port6.png" alt="...">
       <div class="carousel-caption">
     
@@ -299,7 +290,7 @@ I create responsive websites that allow the user to experience your website in t
     </div>
       
        <div class="item"  align="center">
-       <h2>App Icon</h2>
+       <h2>App Icon Designing</h2>
       <img src="img/port7.png" alt="...">
       <div class="carousel-caption">
     
@@ -308,7 +299,7 @@ I create responsive websites that allow the user to experience your website in t
     
       
      <div class="item"  align="center">
-       <h2>Responsive Web Application</h2>
+       <h2>Responsive Web Application Development</h2>
       <img src="img/port8.png" alt="...">
       <div class="carousel-caption">
     
@@ -338,7 +329,7 @@ I create responsive websites that allow the user to experience your website in t
 
   <!------------------------ PAGE 5------------------------------->       
         
-<div data-role="page" id="page5" data-prev="#page4" data-next="#page6"><br>
+<div data-role="page" id="page5" data-prev="#page4" data-next=""><br>
 <!------------------------ Contact BOX ------------------------------->      
  <div class='arrow_box_contactme'> 
  <a href="#page3" pageID="page3" data-transition="slide" style="text-decoration:none;"><button class="contactboxtab"><div class="row" >
@@ -355,9 +346,84 @@ I create responsive websites that allow the user to experience your website in t
 <p style="margin-top:-30px; font-size:14px; color:#b4b5b0;">kush_malhotra78@yahoo.com</p><br>
 <p style="margin-top:-30px;"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></p><br>
 <p style="margin-top:-30px; font-size:24px; color:#b4b5b0;">+91 9910044817</p><br>
+<p style="margin-top:-10px; font-size:24px; color:#b4b5b0;"><a href="#popupInfo" data-rel="popup" data-transition="pop"  title="Learn more"><img src="img/facebook.png"></a></p><br>
+<div data-role="popup" id="popupInfo"  data-theme="a" style="max-width:250px; background-color:#000; color:#fff; border:0px;">
+  <p style="padding:5px;">kush.malhotra1978@gmail.com</p>
+</div>
 </h2>
 
+</div></div>
+
+
+
+
+
+
+
+
+
+
+  <!------------------------ PAGE 6------------------------------->       
+        
+<div data-role="page" id="page6" data-prev="#page5" data-next="#page5"><br>
+     
+<div class="row">
+
+		<div class="col-md-12">
+          <div class="update-nag">
+            <div class="update-split">1</div>
+            <div class="update-text" style="color:#fff;">I build powerful websites.
+            <p style="color:#d8d8d8; padding:10px;">If you need a site with all the bells and whistles, contact me. Database integration, video, audio, ios and android integration, e-commerce — no problem.</p>
+            </div>
+          </div>
+        </div>
+    <br>
+        <div class="col-md-12">
+          <div class="update-nag">
+            <div class="update-split update-info">2</div>
+            <div class="update-text" style="color:#fff;">I emphasize simplicity.
+            <p style="color:#d8d8d8; padding:10px;">Some firms love to build complicated sites. Not me. I choose the simplest tool that will effectively accomplish a task. Simple sites load faster, are easy to use and are less prone to problems.</p>
+            </div>
+          </div>
+        </div>
+<br>
+        <div class="col-md-12">
+          <div class="update-nag">
+            <div class="update-split update-success">3</div>
+            <div class="update-text" style="color:#fff;">I am affordable.
+            <p style="color:#d8d8d8; padding:10px;">My Design has very low overhead. No fancy office in Buckhead, no snooty receptionist, no latte-sipping sales weasels. Just hard-working Internet professionals chained to their computers. (Just kidding. They're not really chained to their computers. They're chained to their desks.)</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="col-md-12">
+          <div class="update-nag">
+            <div class="update-split update-danger">4</div>
+            <div class="update-text" style="color:#fff;">I am friendly.
+            <p style="color:#d8d8d8; padding:10px;">Most of my clients have fun working with me. I will make the web design process easy and pleasant. Speak in plain English, not techno-babble. And I love what we do for a living.</p>
+            </div>
+          </div>
+        </div>
+        <br>
+                <div class="col-md-12">
+          <div class="update-nag">
+            <div class="update-split update-danger">5</div>
+            <div class="update-text" style="color:#fff;">You're the boss.
+            <p style="color:#d8d8d8; padding:10px;">I will give you options and the tools and information to make good choices. I will give you our recommendations, but ultimately, every decision about your website is yours.<br><br></p>
+            </div>
+          </div>
+        </div>
+        
+	</div>
 </div>
+</div>
+         </div>
+<!-- /footer -->
+
+</div>
+
+</div>
+
 
 </div>
 
