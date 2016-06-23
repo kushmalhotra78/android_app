@@ -20,7 +20,7 @@
     under the License.
 -->
 <html>
-    <head>
+   <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
@@ -51,44 +51,7 @@
 
 
 
-<script type='text/javascript'>//<![CDATA[
-$(window).load(function(){
-$(function() {
 
-    var $el, leftPos, newWidth,
-        $mainNav = $("#example-one");
-    
-    $mainNav.append("<li id='magic-line'></li>");
-    var $magicLine = $("#magic-line");
-    
-    $($magicLine)
-        .width($(".current_page_item").width())
-        .css("left", $(".current_page_item a").position().left)
-        .data("origLeft", $magicLine.position().left)
-        .data("origWidth", $magicLine.width());
-   
-    
-    $( "#example-one li a" ).click(function(){
-          $el = $(this);
-        leftPos = $el.position().left;
-        newWidth = $el.parent().width();
-        $magicLine.stop().animate({
-            left: leftPos,
-            width: newWidth
-        });
-
-});
-
-
-
-    
-});
-});//]]> 
-
-
-
-
-</script>
 
 
   
@@ -99,11 +62,11 @@ $(function() {
  
  <div class="nav-wrap" style="z-index:1000;">
  <ul  id="example-one">
-    <li style="border:0px solid #fff; width:16%;  margin-left:-30px;" class="current_page_item" ><a pageID="page1" href="#page1"><img src="img/headicon0.png"></a></li>
-	 <li style="border:0px solid #fff; width:16%;"><a pageID="page2" href="#page2" ><img src="img/headicon2.png"></a></li>
-    <li style="border:0px solid #fff; width:16%;"><a pageID="page3" href="#page3"><img src="img/headicon1.png"></a></li>
-    <li style="border:0px solid #fff; width:16%;"><a pageID="page4" href="#page4"><img src="img/headicon3.png"></a></li>
-    <li style="border:0px solid #fff; width:16%;"><a pageID="page5" href="#page5"><img src="img/headicon5.png"></a></li>
+    <li style="border:0px solid #fff; width:16%;  margin-left:-30px;" class="current_page_item" ><a pageID="page1" href="#page1"><img src="images/headicon0.png"></a></li>
+	 <li style="border:0px solid #fff; width:16%;"><a pageID="page2" href="#page2" ><img src="images/headicon2.png"></a></li>
+    <li style="border:0px solid #fff; width:16%;"><a pageID="page3" href="#page3"><img src="images/headicon1.png"></a></li>
+    <li style="border:0px solid #fff; width:16%;"><a pageID="page4" href="#page4"><img src="images/headicon3.png"></a></li>
+    <li style="border:0px solid #fff; width:16%;"><a pageID="page5" href="#page5"><img src="images/headicon5.png"></a></li>
 <a href="#right_panel_about_page" class="glyphicon glyphicon-menu-hamburger pull-right"  style="margin-right:15px; top:15px; text-decoration:none;"data-role="button" ></a>
  </ul>
 </div>
@@ -129,44 +92,7 @@ $(function() {
         <div data-role="page"   id="page1" data-prev=""  data-next="#page2">
        <br>
        
-      <!------------------------ BOX 1 Kush Malhotra UI/UX Designer ------------------------------->  
-  <div class="col-xs-12 imgcolor">
-  <div align="center" class="kushimgborder"><img src="img/kush.jpg" class="img-circle img-responsive" width="60%" height="60%"></div>
-  <h1 >Kush Malhotra</h1>
-  <h3>UI/UX, Usability, Design & Development</h3>
-  </div>
-
-    <!------------------------ Skills BOX ------------------------------->  
-  
-    <a href="#page2" onclick="return runMyFunction(1);" pageID="page2" data-transition="slide" style="text-decoration:none;"><button class="skillsbox"><div class="row" >
-  <div class="col-xs-10 tabname"  align="left">Skills <span class="smalltext">HTML5 CSS3 BOOTSTRAP...</span></div>
-  <div class="col-xs-2" align="right"><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></div>
-</div></button></a>
-     
- <!------------------------ About BOX ------------------------------->      
- 
- <a href="#page3" onclick="return runMyFunction(2);"  pageID="page3" data-transition="slide" style="text-decoration:none;"><button class="aboutbox"><div class="row" >
-  <div class="col-xs-10 tabname"  align="left">About ME</div>
-  <div class="col-xs-2" align="right"><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></div>
-</div></button></a>
-
-<!------------------------ Portfolio BOX ------------------------------->      
- 
- <a href="#page4" onclick="return runMyFunction(3);" pageID="page4" data-transition="slide" style="text-decoration:none;"><button class="portfoliobox"><div class="row" >
-  <div class="col-xs-10 tabname"  align="left">Portfolio</div>
-  <div class="col-xs-2" align="right"><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></div>
-</div></button></a>
-     
-
-<!------------------------ contact BOX ------------------------------->      
- 
- <a href="#page5" onclick="return runMyFunction(4);" pageID="page5" data-transition="slide" style="text-decoration:none;"><button class="contactbox"><div class="row" >
-  <div class="col-xs-10 tabname"  align="left">Contact</div>
-  <div class="col-xs-2" align="right"><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></div>
-</div></button></a>
-     
-         <br><br>
-
+   aa
         </div>
         
         
@@ -175,18 +101,7 @@ $(function() {
 <div data-role="page" id="page2" data-prev="#page1" data-next="#page3"><br>
 <!------------------------ Skills BOX ------------------------------->  
   
-
-<!--<div class='arrow_box'> 
-    <a href="#page2" pageID="page2" data-transition="slide" style="text-decoration:none;"><button class="skillsboxtab"><div class="row" >
-  <div class="col-xs-10 tabname"  align="left">Skills <span class="smalltext">HTML5 CSS3 BOOTSTRAP...</span></div>
-  <div class="col-xs-2" align="right"></div>
-</div></button></a>   </div>-->
-
-<figure style="margin-top:20px;"><img src="img/html_css_img.png" class="img-responsive"></figure>
-<figure style="margin-top:20px;"><img src="img/bootstrap_img.png" class="img-responsive"></figure>
-<figure style="margin-top:20px;"><img src="img/jqueru_phonegap_img.png" class="img-responsive"></figure>
-<figure style="margin-top:20px;"><img src="img/adobe_img.png" class="img-responsive"></figure>
-<br>
+ddd
 </div>
 
  
@@ -197,19 +112,7 @@ $(function() {
   <!------------------------ PAGE 3------------------------------->       
         
 <div data-role="page" id="page3" data-prev="#page2" data-next="#page4"><br>
- <!------------------------ About BOX ------------------------------->      
- <div class='arrow_box_aboutme'> 
- <a href="#page3" pageID="page3" data-transition="slide" style="text-decoration:none;"><button class="aboutboxtab"><div class="row" >
-  <div class="col-xs-10 tabname"  align="left">About ME</div>
-  <div class="col-xs-2" align="right"></div>
-</div></button></a>
- </div>
-<div style="font-size:14px; color:#c9c9c8; margin-top:40px;">I am a <strong style="color:#0F3;">UI/UX Designer/Developer</strong> having 11 years commercial experience working with clients from around the world, providing responsive front-end development, Mobile UI/UX Designs.The work I provide is of highest quality, fully responsive, and tested in a wide range of devices. I take great care to ensure each project is well-documented and easily maintainable so you can enhance a website as your company grows.Often front-end development of a website is overlooked, but being the part of your project that combines design, back-end development and the layer that your users interact with, from my experience, it is the most important to get right.
-
-<br><br>
-I create responsive websites that allow the user to experience your website in the best and most appropriate way suited to the device they are using. By working using progressive enhancement, your website is delivered with a responsive layout that can best make use of the space available on the smallest to largest devices. Cross browser compatibility is ensured by using feature detection so older browsers still in use today provide a solid experience, whilst modern browsers can go the next step and enhance a user’s time spent on your site.
-<br><br>
-</div>
+ff
 </div>
 
 
@@ -217,109 +120,9 @@ I create responsive websites that allow the user to experience your website in t
   <!------------------------ PAGE 4------------------------------->       
  <!------------------------ portfolio BOX ------------------------------->          
 <div data-role="page" id="page4" data-prev="#page3" data-next="#page5"><br>
-<!--<div class='arrow_box_portfolio'> 
- <a href="#page3" pageID="page3" data-transition="slide" style="text-decoration:none;"><button class="portfolioboxtab"><div class="row" >
-  <div class="col-xs-10 tabname"  align="left">Portfolio</div>
-  <div class="col-xs-2" align="right"></div>
-</div></button></a>
- </div>-->
+
  <br>
- <!------------------------CRAOUSAL START------------------------------->  
-  <div class="middbackground" style="margin-top:-20px;">
-          
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-     <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-       <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active"  align="center">
-    <h2>iPad App Designing</h2>
-      <img src="img/port1.jpg" alt="...">
-      <div class="carousel-caption">
-
-      </div>
-    </div>
-    <div class="item"  align="center">
-     <h2>iPad App Designing</h2>
-      <img src="img/port2.jpg" alt="...">
-      <div class="carousel-caption">
-    
-      </div>
-    </div>
-    
- <div class="item"  align="center">
- <h2>Office Locator: Mobile App (Design & Development)</h2>
-      <img src="img/port3.png" alt="...">
-      <div class="carousel-caption">
-    
-      </div>
-    </div>
-    
-     <div class="item"  align="center">
-     <h2>eServives: Mobile App (Design & Development)</h2>
-      <img src="img/port4.png" alt="...">
-      <div class="carousel-caption">
-    
-      </div>
-    </div>
-    
-      <div class="item"  align="center">
-       <h2>iPad App Designing</h2>
-      <img src="img/port5.png" alt="...">
-      <div class="carousel-caption">
-    
-      </div>
-    </div>
-      
-       <div class="item"  align="center">
-         <h2>App Icon Designing</h2>
-      <img src="img/port6.png" alt="...">
-      <div class="carousel-caption">
-    
-      </div>
-    </div>
-      
-       <div class="item"  align="center">
-       <h2>App Icon Designing</h2>
-      <img src="img/port7.png" alt="...">
-      <div class="carousel-caption">
-    
-      </div>
-    </div>
-    
-      
-     <div class="item"  align="center">
-       <h2>Responsive Web Application Development</h2>
-      <img src="img/port8.png" alt="...">
-      <div class="carousel-caption">
-    
-      </div>
-    </div>
-      
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-          
+ gg
           
          </div>
          
@@ -331,28 +134,7 @@ I create responsive websites that allow the user to experience your website in t
         
 <div data-role="page" id="page5" data-prev="#page4" data-next=""><br>
 <!------------------------ Contact BOX ------------------------------->      
- <div class='arrow_box_contactme'> 
- <a href="#page3" pageID="page3" data-transition="slide" style="text-decoration:none;"><button class="contactboxtab"><div class="row" >
-  <div class="col-xs-10 tabname"  align="left">Contact</div>
-  <div class="col-xs-2" align="right"></div>
-</div></button></a>
- </div>
-<br><br>
-<div align="center">
-<h2 style="font-size:27px;">Kush Malhotra<br>
-<p style="color:#c1dd01; font-size:14px; margin-top:5px;">UI/UX Designer/Developer</p><br>
-<p style="margin-top:-30px;"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></p><br>
-<p style="margin-top:-30px; font-size:14px; color:#b4b5b0;">kush.malhotra1978@gmail.com</p><br>
-<p style="margin-top:-30px; font-size:14px; color:#b4b5b0;">kush_malhotra78@yahoo.com</p><br>
-<p style="margin-top:-30px;"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></p><br>
-<p style="margin-top:-30px; font-size:24px; color:#b4b5b0;">+91 9910044817</p><br>
-<p style="margin-top:-10px; font-size:24px; color:#b4b5b0;"><a href="#popupInfo" data-rel="popup" data-transition="pop"  title="Learn more"><img src="img/facebook.png"></a></p><br>
-<div data-role="popup" id="popupInfo"  data-theme="a" style="max-width:250px; background-color:#000; color:#fff; border:0px;">
-  <p style="padding:5px;">kush.malhotra1978@gmail.com</p>
-</div>
-</h2>
-
-</div></div>
+jjj</div>
 
 
 
@@ -367,117 +149,12 @@ I create responsive websites that allow the user to experience your website in t
         
 <div data-role="page" id="page6" data-prev="#page5" data-next="#page5"><br>
      
-<div class="row">
-
-		<div class="col-md-12">
-          <div class="update-nag">
-            <div class="update-split">1</div>
-            <div class="update-text" style="color:#fff;">I build powerful websites.
-            <p style="color:#d8d8d8; padding:10px;">If you need a site with all the bells and whistles, contact me. Database integration, video, audio, ios and android integration, e-commerce — no problem.</p>
-            </div>
-          </div>
-        </div>
-    <br>
-        <div class="col-md-12">
-          <div class="update-nag">
-            <div class="update-split update-info">2</div>
-            <div class="update-text" style="color:#fff;">I emphasize simplicity.
-            <p style="color:#d8d8d8; padding:10px;">Some firms love to build complicated sites. Not me. I choose the simplest tool that will effectively accomplish a task. Simple sites load faster, are easy to use and are less prone to problems.</p>
-            </div>
-          </div>
-        </div>
-<br>
-        <div class="col-md-12">
-          <div class="update-nag">
-            <div class="update-split update-success">3</div>
-            <div class="update-text" style="color:#fff;">I am affordable.
-            <p style="color:#d8d8d8; padding:10px;">My Design has very low overhead. No fancy office in Buckhead, no snooty receptionist, no latte-sipping sales weasels. Just hard-working Internet professionals chained to their computers. (Just kidding. They're not really chained to their computers. They're chained to their desks.)</p>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="col-md-12">
-          <div class="update-nag">
-            <div class="update-split update-danger">4</div>
-            <div class="update-text" style="color:#fff;">I am friendly.
-            <p style="color:#d8d8d8; padding:10px;">Most of my clients have fun working with me. I will make the web design process easy and pleasant. Speak in plain English, not techno-babble. And I love what we do for a living.</p>
-            </div>
-          </div>
-        </div>
-        <br>
-                <div class="col-md-12">
-          <div class="update-nag">
-            <div class="update-split update-danger">5</div>
-            <div class="update-text" style="color:#fff;">You're the boss.
-            <p style="color:#d8d8d8; padding:10px;">I will give you options and the tools and information to make good choices. I will give you our recommendations, but ultimately, every decision about your website is yours.<br><br></p>
-            </div>
-          </div>
-        </div>
-        
-	</div>
-</div>
-</div>
-         </div>
-<!-- /footer -->
-
-</div>
-
-</div>
+kk
 
 
 </div>
 
 
-<script type='text/javascript'>//<![CDATA[
-
-function navnext( next ) {
-    $( ":mobile-pagecontainer" ).pagecontainer( "change", next, {
-        transition: "slide"
-    });
-  var liChild = parseInt(next.replace('#page',''))-1;
-$( "#example-one li a:eq("+liChild+")" ).trigger( "click" );
-
-}
-function navprev( prev ) {
-    $( ":mobile-pagecontainer" ).pagecontainer( "change", prev, {
-        transition: "slide",
-        reverse: true
-    });
-  var liChild = parseInt(prev.replace('#page',''))-1;
-$( "#example-one li a:eq("+liChild+")" ).trigger( "click" );
-
-}
-
-function runMyFunction(child)
-{
-   $( "#example-one li a:eq("+child+")" ).trigger( "click" );
-return true;
-}
-
-
-$( document ).one( "pagecreate", "#page1", function() {
-    // Handler for navigating to the next page
-    // Navigate to the next page on swipeleft
-    $( document ).on( "swipeleft", ".ui-page",  function( event ) {
-        // Get the filename of the next page. We stored that in the data-next
-        // attribute in the original markup.
-        var next = $( this ).jqmData( "next" );
-        if ( next ) {
-            navnext( next );
-        }
-    });
-    // The same for the navigating to the previous page
-    $( document ).on( "swiperight", ".ui-page", function( event ) {
-        var prev = $( this ).jqmData( "prev" );
-        if (prev) {
-            navprev( prev );
-        }
-    });
-});
-
-//]]> 
-
-</script>
 
 
         <script type="text/javascript" src="cordova.js"></script>
