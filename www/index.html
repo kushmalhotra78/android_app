@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--
     Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
-
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
     distributed with this work for additional information
@@ -9,9 +8,7 @@
     to you under the Apache License, Version 2.0 (the
     "License"); you may not use this file except in compliance
     with the License.  You may obtain a copy of the License at
-
     http://www.apache.org/licenses/LICENSE-2.0
-
     Unless required by applicable law or agreed to in writing,
     software distributed under the License is distributed on an
     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -20,16 +17,13 @@
     under the License.
 -->
 <html>
-   <head>
+    <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-        <title>Hello World</title>
-
-  
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 <link rel="stylesheet" href="css/custom.css" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -38,28 +32,11 @@
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
-  
-<script id="panel-init">
-		$(function() {
-			$( "body>[data-role='panel']" ).panel();
-		});
-	</script>
-
-
-
-
-
-
-
-
-
-  
-</head>
-
-<body style="overflow:hidden;">
-
- 
+    </head>
+    <body>
+    
+    
+    
  <div class="nav-wrap" style="z-index:1000;">
  <ul  id="example-one">
     <li style="border:0px solid #fff; width:16%;  margin-left:-30px;" class="current_page_item" ><a pageID="page1" href="#page1"><img src="images/headicon0.png"></a></li>
@@ -70,93 +47,16 @@
 <a href="#right_panel_about_page" class="glyphicon glyphicon-menu-hamburger pull-right"  style="margin-right:15px; top:15px; text-decoration:none;"data-role="button" ></a>
  </ul>
 </div>
- 
- 
-        
- <div data-role="panel" id="right_panel_about_page" data-position="right" data-display="overlay" data-theme="b" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-open">
-			<div class="ui-panel-inner"><ul data-role="listview" >
-				<!--<li data-icon="back" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-back">Close</a></li>-->
-				<a href="#page1"  onclick="return runMyFunction(0);" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">HOME</span></li></a>
-                <a href="#page2" onclick="return runMyFunction(1);" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">Skills</span></li></a>
-				<a href="#page3" onclick="return runMyFunction(2);" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">About ME</span></li></a>
-                 <a href="#page6"  style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">Why ME?</span></li></a>
-                <a href="#page4" onclick="return runMyFunction(3);" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">Portfolio</span></li></a>
-				<a href="#page5" onclick="return runMyFunction(4);" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">Contact</span></li></a>
-			</ul></div>
-		</div>
 
 
 
-
- <!------------------------ PAGE 1------------------------------->
-        <div data-role="page"   id="page1" data-prev=""  data-next="#page2">
-       <br>
-       
-   aa
+        <div class="app">
+            <h1>PhoneGap</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
         </div>
-        
-        
- <!------------------------ PAGE 2------------------------------->
- 
-<div data-role="page" id="page2" data-prev="#page1" data-next="#page3"><br>
-<!------------------------ Skills BOX ------------------------------->  
-  
-ddd
-</div>
-
- 
- 
- 
- 
- 
-  <!------------------------ PAGE 3------------------------------->       
-        
-<div data-role="page" id="page3" data-prev="#page2" data-next="#page4"><br>
-ff
-</div>
-
-
-
-  <!------------------------ PAGE 4------------------------------->       
- <!------------------------ portfolio BOX ------------------------------->          
-<div data-role="page" id="page4" data-prev="#page3" data-next="#page5"><br>
-
- <br>
- gg
-          
-         </div>
-         
-          <!------------------------CRAOUSAL ENDS------------------------------->  
-</div>
-
-
-  <!------------------------ PAGE 5------------------------------->       
-        
-<div data-role="page" id="page5" data-prev="#page4" data-next=""><br>
-<!------------------------ Contact BOX ------------------------------->      
-jjj</div>
-
-
-
-
-
-
-
-
-
-
-  <!------------------------ PAGE 6------------------------------->       
-        
-<div data-role="page" id="page6" data-prev="#page5" data-next="#page5"><br>
-     
-kk
-
-
-</div>
-
-
-
-
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
