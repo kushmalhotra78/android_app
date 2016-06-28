@@ -5338,7 +5338,6 @@ button.close {
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0)
 }
-}
 .carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev {
 	display: block
 }
@@ -5378,15 +5377,9 @@ button.close {
 	filter: alpha(opacity=100);
 	opacity: .5
 }
-.carousel-control.left {
-	
-}
 .carousel-control.right {
 	right: 0;
 	left: auto;
-	
-
-
 }
 .carousel-control:focus, .carousel-control:hover {
 	color: #fff;
@@ -5486,7 +5479,6 @@ button.close {
 }
 .carousel-indicators {
 	bottom: 20px
-}
 }
 .btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
 	display: table;
