@@ -20,23 +20,23 @@
     under the License.
 -->
 <html>
-   <head>
+    <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-       
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
         <title>Hello World</title>
 
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  
-<!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />-->
-<!--<link rel="stylesheet" href="css/custom.css" />-->
+  
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/custom.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
 
-<!--
-<script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/jquery.mobile-1.4.5.min.js"></script>-->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
   
@@ -46,6 +46,16 @@
 		});
 	</script>
 
+
+
+  
+
+  
+
+  <style type="text/css">
+ 
+
+  </style>
 
 
 
@@ -66,21 +76,23 @@ $(function() {
         .css("left", $(".current_page_item a").position().left)
         .data("origLeft", $magicLine.position().left)
         .data("origWidth", $magicLine.width());
-   
-    
-    $( "#example-one li a" ).click(function(){
-          $el = $(this);
+        
+    $("#example-one li a").hover(function() {
+
+        $el = $(this);
         leftPos = $el.position().left;
         newWidth = $el.parent().width();
         $magicLine.stop().animate({
             left: leftPos,
             width: newWidth
         });
-
-});
-
-
-
+    }, function() {
+        $magicLine.stop().animate({
+            left: $magicLine.data("origLeft"),
+            width: $magicLine.data("origWidth")
+        });    
+    });
+    
     
 });
 });//]]> 
@@ -90,27 +102,88 @@ $(function() {
 
 </script>
 
-
   
 </head>
 
-<body style="overflow:hidden;">
+<body style="overflow:hidden;" >
+
+ 
+ <div class="nav-wrap" style="z-index:1000;">
+ <ul  id="example-one">
+    <li style="border:0px solid #fff; width:16%;  margin-left:-30px;" class="current_page_item" ><a pageID="page1" href="#page1"><img src="images/headicon1.png"></a></li>
+	 <li style="border:0px solid #fff; width:16%;"><a pageID="page2" href="#page2"><img src="images/headicon2.png"></a></li>
+    <li style="border:0px solid #fff; width:16%;"><a pageID="page3" href="#page3"><img src="images/headicon3.png"></a></li>
+    <li style="border:0px solid #fff; width:16%;"><a pageID="page4" href="#page4"><img src="images/headicon4.png"></a></li>
+    <li style="border:0px solid #fff; width:16%;"><a pageID="page5" href="#page5"><img src="images/headicon5.png"></a></li>
+<a href="#right_panel_about_page" class="glyphicon glyphicon-menu-hamburger pull-right"  style="margin-right:15px; top:15px; text-decoration:none;"data-role="button" ></a>
+ </ul>
+</div>
+ 
+ 
+        
+  <div data-role="panel" id="right_panel_about_page" data-position="right" data-display="overlay" data-theme="b" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-open">
+			<div class="ui-panel-inner"><ul data-role="listview" >
+				<!--<li data-icon="back" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-back">Close</a></li>-->
+				<a href="#page1" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">HOME</span></li></a>
+                <a href="#page2" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">About Me</span></li></a>
+				<a href="#page3" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">Services</span></li></a>
+				<a href="#page4" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">Portfolio</span></li></a>
+                <a href="#page5" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">Why Me?</span></li></a>
+				<a href="#page6" style="padding:1px; text-decoration:none; list-style:none; color:#fff; font-weight:normal;"><li style="margin-left:-30px; height:30px; border-bottom:1px solid #36313a;"><span style="margin-left:10px;">Contact</span></li></a>
+			</ul></div>
+		</div>
 
 
-<div class="row" style="color:#000;">
-  <div class="col-xs-4">.col-md-4</div>
-  <div class="col-xs-4">.col-md-4</div>
-  <div class="col-xs-4">.col-md-4</div>
-</div> 
+
+
+ <!------------------------ PAGE 1------------------------------->
+        <div data-role="page"   id="page1" data-prev=""  data-next="#page2">
+        <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac ante vitae purus eleifend euismod fermentum quis metus. Cras nec accumsan augue, vitae placerat nisl. Maecenas ac accumsan massa. Curabitur blandit leo suscipit ex scelerisque, eu feugiat tellus mattis. Cras nec varius nulla. Curabitur laoreet dui arcu, in condimentum eros tincidunt eget. Etiam quis magna sed turpis malesuada cursus. Fusce dictum, ligula in tincidunt tincidunt, orci augue ultricies dolor, in convallis turpis mauris et nulla. Duis non vestibulum urna, sed molestie odio. Donec aliquet, augue ac facilisis ornare, lectus nibh dignissim lectus, in finibus magna velit vitae ex. Donec placerat orci ac maximus commodo. Aenean eu dui id elit maximus efficitur.
+
+Vivamus aliquam ipsum vitae pharetra vulputate. Etiam pulvinar auctor volutpat. Nulla at odio massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam vitae placerat nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus dictum hendrerit. Donec quam dui, pharetra eget erat sed, hendrerit gravida leo. In a malesuada ipsum. Nulla molestie tincidunt magna.
+
+Aliquam erat volutpat. Phasellus enim dui, venenatis a mauris quis, ullamcorper viverra ex. Nullam ex enim, pharetra at viverra non, congue sed lectus. Etiam aliquam lorem nibh, eu ullamcorper mauris pretium et. Suspendisse sed tempus dolor, nec tincidunt velit. Fusce ac leo ante. Etiam non dignissim purus. Maecenas velit sem, condimentum sed est vitae, mollis rhoncus elit. Aenean in maximus dui. Duis bibendum ligula id diam scelerisque volutpat. Donec pretium, erat eu euismod cursus, diam mi tempor tortor, faucibus suscipit enim magna in massa. Morbi hendrerit mi vel odio pharetra vestibulum. In dapibus nunc non tortor accumsan sodales. Quisque purus dui, euismod ac elit non, feugiat consectetur nulla.
+
+Pellentesque ut neque diam. Cras a nunc pulvinar, laoreet turpis sit amet, euismod nulla. Fusce consequat ipsum sem, ut pellentesque metus varius vel. Aliquam fermentum massa placerat, vulputate nisi ac, bibendum velit. Curabitur rutrum pharetra feugiat. Suspendisse feugiat viverra metus, nec congue purus cursus in. Sed eu molestie nisi. Quisque posuere massa dui. Nulla hendrerit nisi ut nulla pharetra, quis efficitur elit tristique. Aliquam ut velit maximus, eleifend lacus at, faucibus quam. Integer magna ante, dignissim non volutpat sed, vestibulum in massa kush.
+
+Ut et magna congue, pharetra quam sit amet, consequat ligula. Pellentesque sed elit sit amet turpis lacinia mollis. Ut nulla ante, pharetra at mi nec, tincidunt rhoncus diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus enim massa, cursus nec lobortis sit amet, tempor vel lorem. Nulla ut tristique lectus. Proin quis dapibus nulla, hendrerit tincidunt nibh. Phasellus sit amet neque arcu. Sed aliquet sit amet magna in feugiat aa. Ut et magna congue, pharetra quam sit amet, consequat ligula. Pellentesque sed elit sit amet turpis lacinia mollis. Ut nulla ante, pharetra at mi nec, tincidunt rhoncus diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus enim massa, cursus nec lobortis sit amet, tempor vel lorem. Nulla ut tristique lectus. Proin quis dapibus nulla, hendrerit tincidunt nibh. Phasellus sit amet neque arcu. Sed aliquet sit amet magna in feugiat KUSH aaa. <br><br>
+        
+        </div>
+        
+        
+ <!------------------------ PAGE 2------------------------------->
+ 
+<div data-role="page" id="page2" data-prev="#page1" data-next="#page3"><br>Page 3</div>
+
+  <!------------------------ PAGE 3------------------------------->       
+        
+<div data-role="page" id="page3" data-prev="#page2" data-next="#page4"><br>Page 4</div>
+
+
+
+  <!------------------------ PAGE 4------------------------------->       
+        
+<div data-role="page" id="page4" data-prev="#page3" data-next="#page5"><br>Page 5</div>
+
+
+  <!------------------------ PAGE 5------------------------------->       
+        
+<div data-role="page" id="page5" data-prev="#page4" data-next="#page6"><br>Page 6</div>
+
+
+
+
 
 <script type='text/javascript'>//<![CDATA[
 
 function navnext( next ) {
+debugger;
     $( ":mobile-pagecontainer" ).pagecontainer( "change", next, {
         transition: "slide"
     });
+
   var liChild = parseInt(next.replace('#page',''))-1;
-$( "#example-one li a:eq("+liChild+")" ).trigger( "click" );
+$( "#example-one li a:eq("+liChild+")" ).mouseenter();
 
 }
 function navprev( prev ) {
@@ -118,15 +191,15 @@ function navprev( prev ) {
         transition: "slide",
         reverse: true
     });
-  var liChild = parseInt(prev.replace('#page',''))-1;
-$( "#example-one li a:eq("+liChild+")" ).trigger( "click" );
 
+  var liChild = parseInt(prev.replace('#page',''))-1;
+$( "#example-one li a:eq("+liChild+")" ).mouseenter();
 }
 
-function runMyFunction(child)
-{
-   $( "#example-one li a:eq("+child+")" ).trigger( "click" );
-return true;
+   
+function orangeScroll(){
+
+
 }
 
 
