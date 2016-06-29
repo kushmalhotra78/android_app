@@ -43,7 +43,8 @@
 <script id="panel-init">
 		$(function() {
 			$( "body>[data-role='panel']" ).panel();
-		});
+				});
+
 	</script>
 
 
@@ -79,7 +80,11 @@ $(function() {
             width: $magicLine.data("origWidth")
         });    
     });
-    
+ 	$(document).ready(function() {
+	super.loadUrl(Config.getStartUrl(),1);   
+    WebSettings settings = appView.getSettings(); 
+    settings.setUseWideViewPort(true); 
+    settings.setLoadWithOverviewMode(true);    
     
 });
 });//]]> 
