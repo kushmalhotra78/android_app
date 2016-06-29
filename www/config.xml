@@ -54,7 +54,7 @@
     <plugin name="cordova-plugin-vibration"           source="npm" spec="~2.1.0" />
         <plugin name="cordova-plugin-whitelist"           source="npm" spec="~1.2.1" />
         
-        <gap:plugin name="com.phonegap.plugin.viewport_scale" />
+        
 
     <!-- Define app icon and splashscreen for each platform. -->
     <icon src="icon.png" />
