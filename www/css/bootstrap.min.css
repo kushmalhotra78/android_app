@@ -1136,7 +1136,11 @@ cursor:pointer
 	font-size: 36px
 }
 .h2, h2 {
-	font-size: 30px
+	font-size: 30px;
+	font-size:16px;
+	line-height:20px;
+	color:#fff;
+	font-weight:normal;
 }
 .h3, h3 {
 	font-size: 24px
