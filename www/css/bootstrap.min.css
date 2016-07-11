@@ -937,6 +937,7 @@ h2, h3 {
 }
 .glyphicon-menu-hamburger:before {
 	content: "\e236"
+	font-size:34px;
 }
 .glyphicon-modal-window:before {
 	content: "\e237"
