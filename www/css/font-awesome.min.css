@@ -1704,8 +1704,11 @@ transform:rotate(359deg)
 	content: "\f231"
 }
 .fa-whatsapp:before {
-	content: "\f232"
+	content: "\f232";
+	font-size:28px;
+	margin-left:5px;
 }
+
 .fa-server:before {
 	content: "\f233"
 }
