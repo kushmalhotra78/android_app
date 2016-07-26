@@ -19,6 +19,7 @@
     <feature name="SocialSharing">
   <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
 </feature>
+<gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
 
     <!-- Define the main entry-point to the application -->
     <content src="index.html" />
