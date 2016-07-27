@@ -53,9 +53,6 @@ legend, .ui-input-text input, .ui-input-search input {
 
 
 .ui-overlay-shadow {
-	-webkit-box-shadow: 0 0 12px rgba(0,0,0,.6);
-	-moz-box-shadow: 0 0 12px rgba(0,0,0,.6);
-	box-shadow: 0 0 12px rgba(0,0,0,.6)
 }
 .ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
 	background-color: #666;
@@ -182,7 +179,7 @@ legend, .ui-input-text input, .ui-input-search input {
 	text-shadow: 0 0px 0 #111
 }
 .ui-body-b, .ui-page-theme-b .ui-body-inherit, html .ui-bar-b .ui-body-inherit, html .ui-body-b .ui-body-inherit, html body .ui-group-theme-b .ui-body-inherit, html .ui-panel-page-container-b {
-	background-color: #2a2a2a;
+	/*background-color: #2a2a2a;*/
 	border-color: #1d1d1d;
 	color: #fff;
 	text-shadow: 0 0px 0 #111
@@ -2103,6 +2100,7 @@ margin-left:.3125em
 	z-index: 1100;
 	display: inline-block;
 	position: absolute;
+	width:100%;
 	padding: 0;
 	outline: 0
 }
