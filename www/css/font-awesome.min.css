@@ -304,7 +304,10 @@ transform:rotate(359deg)
 	content: "\f02f"
 }
 .fa-camera:before {
-	content: "\f030"
+	content: "\f030";
+		font-size:23px;
+		margin-right:10px;
+		
 }
 .fa-font:before {
 	content: "\f031"
@@ -424,7 +427,25 @@ transform:rotate(359deg)
 	content: "\f059"
 }
 .fa-info-circle:before {
-	content: "\f05a"
+	content: "\f05a";
+	font-size:32px;
+	color:#000;
+	font-style:italic;
+}
+.fa-info-circle:hover {
+	content: "\f05a";
+	font-size:32px;
+	color:#000;
+	font-style:italic;
+		-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
 }
 .fa-crosshairs:before {
 	content: "\f05b"
@@ -539,7 +560,8 @@ transform:rotate(359deg)
 	font-size:32px;
 }
 .fa-camera-retro:before {
-	content: "\f083"
+	content: "\f083";
+
 }
 .fa-key:before {
 	content: "\f084"
@@ -1708,7 +1730,6 @@ transform:rotate(359deg)
 	font-size:28px;
 	margin-left:5px;
 }
-
 .fa-server:before {
 	content: "\f233"
 }
