@@ -88,7 +88,14 @@ $(function() {
 
 </script>
 
-  
+  <script>
+$('.fab').hover(function () {
+    $(this).toggleClass('active');
+});
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 </head>
 
 <body style="overflow:hidden;">
@@ -340,7 +347,7 @@ Share it on:
         
 <div data-role="page" id="page5" data-prev="#page4" data-next=""><br>
 <!------------------------ Contact BOX ------------------------------->      
- <div class='arrow_box_contactme'> 
+ <div class='arrow_box_contactme' id="fade"> 
  <a href="#page3" pageID="page3" data-transition="slide" style="text-decoration:none;"><button class="contactboxtab"><div class="row" >
   <div class="col-xs-10 tabname"  align="left">Contact</div>
   <div class="col-xs-2" align="right"></div>
@@ -353,14 +360,61 @@ Share it on:
 <p style="margin-top:-30px;"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></p><br><br>
 <p style="margin-top:-30px; font-size:14px; color:#b4b5b0;">kush.malhotra1978@gmail.com</p><br>
 <p style="margin-top:-30px; font-size:14px; color:#b4b5b0;">kush_malhotra78@yahoo.com</p><br><br>
-<p style="margin-top:-30px;"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></p><br><br>
-<p style="margin-top:-30px; font-size:24px; color:#b4b5b0;">+91 9910044817</p><br><br>
-<p style="margin-top:-10px; font-size:24px; color:#b4b5b0;"><a href="#popupInfo" data-rel="popup" data-transition="pop"  title="Learn more"><img src="img/facebook.png"></a></p><br>
+<!--<p style="margin-top:-30px;"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></p><br><br>-->
+<!--<p style="margin-top:-10px; font-size:24px; color:#b4b5b0;"><a href="#popupInfo" data-rel="popup" data-transition="pop"  title="Learn more"><img src="img/facebook.png"></a></p><br>
 <div data-role="popup" id="popupInfo"  data-theme="a" style="max-width:250px; background-color:#000; color:#fff; border:0px;">
   <p style="padding:5px;">kush.malhotra1978@gmail.com</p>
 </div>
+-->
+<div class="container">
+	<div class="row">
+		        <div id="inbox">
+          <div class="fab btn-group show-on-hover dropup">
+              <div data-toggle="tooltip" data-placement="left" title="Contact Me" style="margin-left: 42px;">
+          <button type="button" class="btn btn-danger btn-io dropdown-toggle pulse2" data-toggle="dropdown">
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
+                <i class="fa fa-plus fa-stack-1x fa-inverse fab-primary"></i>
+                <i class="fa fa-pencil fa-stack-1x fa-inverse fab-secondary"></i>
+            </span>
+          </button></div>
+          <ul class="dropdown-menu dropdown-menu-right" role="menu">
+            <li><a href="#" data-toggle="tooltip" data-placement="left" title="kush.malhotra1978@gmail.com"><i class="fa fa-facebook" ></i></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="left" title="LiveChat"><i class="fa fa-comments-o"></i></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="left" title="kush.malhotra@skype.com"><i class="fa fa-skype"></i></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="left" title="9910044817"><i class="fa fa-whatsapp"></i></a></li>
+          </ul>
+        </div>
+        </div>
+	</div>
+</div>
 </h2>
-
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
   
 </div>
 </div></div>
@@ -486,8 +540,8 @@ $( document ).one( "pagecreate", "#page1", function() {
 });
 
 //]]> 
-
 </script>
+
 
 
         <script type="text/javascript" src="cordova.js"></script>
