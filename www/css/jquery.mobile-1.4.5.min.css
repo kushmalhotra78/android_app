@@ -551,7 +551,7 @@ button.ui-btn, .ui-controlgroup-controls button.ui-btn-icon-notext {
 	box-sizing: border-box;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	width: 100%
+	width: 100%;
 }
 button.ui-btn-inline, .ui-header button.ui-btn, .ui-footer button.ui-btn {
 	width: auto
