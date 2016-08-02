@@ -1,5 +1,5 @@
 body{
-	background:url(../images/stardust.png);
+	background:url(../img/stardust.png);
 	
 	}
 .img-circle {
@@ -22,7 +22,7 @@ body{
 	border-radius:4px;
 	margin-top:50px;
 	z-index:-1;
-	background:url(../images/grassbg.png);
+	background:url(../img/grassbg.png);
 	background-repeat:no-repeat;
 	background-size:cover;
 	}
@@ -62,7 +62,7 @@ h3{
 	height:60px;
 	top:5px;
 	text-decoration:none;
-	background:url(../images/skillboxbg.png);
+	background:url(../img/skillboxbg.png);
 	color:#000000;
 	text-align:left;
 	border:0px;
@@ -74,7 +74,7 @@ h3{
 	height:60px;
 	top:14px;
 	text-decoration:none;
-	background:url(../images/skillboxbg.png);
+	background:url(../img/skillboxbg.png);
 	color:#000000;
 	text-align:left;
 	border:0px;
@@ -87,7 +87,7 @@ h3{
 	height:60px;
 	top:6px;
 	text-decoration:none;
-	background:url(../images/aboutboxbg.png);
+	background:url(../img/aboutboxbg.png);
 	color:#000000;
 	text-align:left;
 	border:0px;
@@ -100,7 +100,7 @@ h3{
 	height:60px;
 	top:14px;
 	text-decoration:none;
-	background:url(../images/aboutboxbg.png);
+	background:url(../img/aboutboxbg.png);
 	color:#000000;
 	text-align:left;
 	border:0px;
@@ -112,7 +112,7 @@ h3{
 	height:60px;
 	top:8px;
 	text-decoration:none;
-	background:url(../images/portfolioboxbg.png);
+	background:url(../img/portfolioboxbg.png);
 	color:#000000;
 	text-align:left;
 	border:0px;
@@ -124,7 +124,7 @@ h3{
 	height:60px;
 	top:15px;
 	text-decoration:none;
-	background:url(../images/portfolioboxbg.png);
+	background:url(../img/portfolioboxbg.png);
 	color:#000000;
 	text-align:left;
 	border:0px;
@@ -135,7 +135,7 @@ h3{
 	height:60px;
 	top:9px;
 	text-decoration:none;
-	background:url(../images/contactboxbg.png);
+	background:url(../img/contactboxbg.png);
 	color:#b098b0;
 	text-align:left;
 	border:0px;
@@ -147,7 +147,7 @@ h3{
 	height:60px;
 	top:14px;
 	text-decoration:none;
-	background:url(../images/contactboxbg.png);
+	background:url(../img/contactboxbg.png);
 	color:#b098b0;
 	text-align:left;
 	border:0px;
@@ -334,7 +334,7 @@ h1{
 	z-index:-1;
 	height:80%;
 	padding:10px;
-	background-image:url(../images/village-bg.png);
+	background-image:url(../img/village-bg.png);
     background-position:center center;
     background-attachment:scroll;
     background-size:cover;
