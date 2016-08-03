@@ -97,7 +97,50 @@ $(function () {
 })
 </script>
 
+ <script type="text/javascript" charset="utf-8">
+      function init() {
+          document.addEventListener("deviceready", ready, true);
+      }
 
+      function ready() {
+          console.log("App is ready.");
+      }
+
+      function download() {
+
+       //   var remoteFile = "https://dl.dropbox.com/u/6731723/a.zip";
+          var remoteFile = "img/Kush_Malhotra_UX_UI_Designer.pdf";
+          var localFileName = remoteFile.substring(remoteFile.lastIndexOf('/') + 1);
+
+          window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (fileSystem) {
+              fileSystem.root.getFile(localFileName, { create: true, exclusive: false }, function (fileEntry) {
+                  var localPath = fileEntry.fullPath;
+                  console.log("localPath1:" + localPath);
+                  if (device.platform === "Android" && localPath.indexOf("file://") === 0) {
+                      localPath = localPath.substring(7);
+                  }
+                  console.log("localPath2 save:" + localPath);
+                  var ft = new FileTransfer();
+                  ft.download(remoteFile,
+                      localPath, function (entry) {
+                          console.log("file path:" + entry.fullPath);
+                          var linkopen = document.getElementById("openlink");
+                          linkopen.style.display = "block";
+                          linkopen.href = entry.fullPath;
+
+                          // var dwnldImg = document.getElementById("dwnldImg");
+                          //dwnldImg.src = entry.fullPath;
+                          //dwnldImg.style.visibility = "visible";
+                          //dwnldImg.style.display = "block";
+                      }, fail);
+              }, fail);
+          }, fail);
+      }
+
+      function fail(error) {
+          console.log("error:" + error.code);
+      }
+  </script>
 </head>
 
 <body style="overflow:hidden;">
@@ -223,7 +266,7 @@ I create responsive websites that allow the user to experience your website in t
 
 <div class="row" style="background:#FFF;">
   <div class="col-xs-2"><img src="img/pdf.png"></div>
-  <div class="col-xs-9" style="color:#333; padding:10px;" align="left"><a href="img/Kush_Malhotra_UX_UI_Designer.pdf" style="color:#333; text-decoration:none;">Download My Resume</a></div>
+  <div class="col-xs-9" style="color:#333; padding:10px;" align="left"><a href="#" onclick="download();" style="color:#333; text-decoration:none;">Download My Resume</a></div>
 </div>
 <br>
 </div>
