@@ -628,7 +628,7 @@ transform:rotate(359deg)
 }
 .fa-facebook-f:before, .fa-facebook:before {
 	content: "\f09a";
-	font-size:22px;
+	font-size:32px;
 }
 .fa-github:before {
 	content: "\f09b"
@@ -805,7 +805,8 @@ transform:rotate(359deg)
 	content: "\f0e5"
 }
 .fa-comments-o:before {
-	content: "\f0e6"
+	content: "\f0e6";
+	font-size:32px;
 }
 .fa-flash:before, .fa-bolt:before {
 	content: "\f0e7"
@@ -1228,7 +1229,8 @@ transform:rotate(359deg)
 	content: "\f17d"
 }
 .fa-skype:before {
-	content: "\f17e"
+	content: "\f17e";
+	font-size:32px;
 }
 .fa-foursquare:before {
 	content: "\f180"
@@ -1727,7 +1729,7 @@ transform:rotate(359deg)
 }
 .fa-whatsapp:before {
 	content: "\f232";
-	font-size:28px;
+	font-size:32px;
 	margin-left:5px;
 }
 .fa-server:before {
