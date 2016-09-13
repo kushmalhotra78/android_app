@@ -10,7 +10,7 @@ var $status;
 var assetURL = "https://raw.githubusercontent.com/cfjedimaster/Cordova-Examples/master/readme.md";
 
 //File name of our important data file we didn't ship with the app
-var fileName = "Kush_Malhotra_UX_UI_Designer";
+var fileName = "Kush_Malhotra_UX_UI_Designer.pdf";
 
 function init() {
 	
@@ -41,5 +41,5 @@ function downloadAsset() {
 
 //I'm only called when the file exists or has been downloaded.
 function appStart() {
-	$status.innerHTML = "App ready!";
+	$status.innerHTML = "Download my resume";
 }
