@@ -41,6 +41,7 @@
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/SocialSharing.js"></script>
+
   
 <script id="panel-init">
 		$(function() {
@@ -109,7 +110,7 @@ $(function () {
       function download() {
 
        //   var remoteFile = "https://dl.dropbox.com/u/6731723/a.zip";
-          var remoteFile = "http://www.unesco.org/education/gmr_download/chapter1.pdf";
+          var remoteFile = "img/Kush_Malhotra_UX_UI_Designer.pdf";
           var localFileName = remoteFile.substring(remoteFile.lastIndexOf('/') + 1);
 
           window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (fileSystem) {
@@ -143,7 +144,7 @@ $(function () {
   </script>
 </head>
 
-<body style="overflow:hidden;" onload="init();">
+<body style="overflow:hidden;" ng-app>
 
  
  <div class="nav-wrap" style="z-index:1000;">
@@ -283,6 +284,7 @@ I create responsive websites that allow the user to experience your website in t
   <div class="col-xs-2" align="right"></div>
 </div></button></a>
  </div>-->
+ 
  <!------------------------CRAOUSAL START------------------------------->  
   <div class="middbackground" style="margin-top:-20px;">
          
@@ -297,6 +299,7 @@ I create responsive websites that allow the user to experience your website in t
      <li data-target="#carousel-example-generic" data-slide-to="5"></li>
       <li data-target="#carousel-example-generic" data-slide-to="6"></li>
        <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+       <li data-target="#carousel-example-generic" data-slide-to="8"></li>
   </ol>
  
   <!-- Wrapper for slides -->
@@ -334,7 +337,7 @@ Share it on:
     
      <div class="item"  align="center">
      <h2>eServives: Mobile App (Design & Development)</h2>
-      <img src="img/port4.png" alt="..."><br><br><br><br><br><br><br>
+      <img src="img/port4.png" alt="..."><br><br><br><br><br><br>
       <div class="carousel-caption">
 Share it on:
      <button class="fa fa-facebook" style="background-color:#069; color:#fff; width:50px; height:44px; border-radius:4px; margin-bottom:20px; margin-left:20px; font-size:13px;" onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', 'www/img/port4.png' /* img */, null /* url */,  function() { console.log('share ok') }, function(errormsg){ alert(errormsg) })"></button>
@@ -383,6 +386,17 @@ Share it on:
     <i class="fa fa-whatsapp" aria-hidden="true" onclick="window.plugins.socialsharing.shareViaWhatsApp('Message via WhatsApp', 'www/img/port8.png' /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})"> </i>
       </div>
     </div>
+    
+    <div class="item"  align="center">
+       <h2>Ressponsive Web Application Development</h2>
+       <a href="http://productiser.com/" style="color:#0F0;">www.productiser.com</a><br><br>
+      <img src="img/port9.png" alt="...">
+        <div class="carousel-caption">
+Share it on:
+     <button class="fa fa-facebook" style="background-color:#069; color:#fff; width:50px; height:44px; border-radius:4px; margin-bottom:20px; margin-left:20px; font-size:13px;" onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', 'www/img/port9.png' /* img */, null /* url */,  function() { console.log('share ok') }, function(errormsg){ alert(errormsg) })"></button>
+    <i class="fa fa-whatsapp" aria-hidden="true" onclick="window.plugins.socialsharing.shareViaWhatsApp('Message via WhatsApp', 'www/img/port9.png' /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})"> </i>
+      </div>
+    </div>
       
     </div>
   </div>
@@ -428,6 +442,8 @@ Share it on:
   <p style="padding:5px;">kush.malhotra1978@gmail.com</p>
 </div>
 -->
+
+    
 <div class="container">
 	<div class="row">
 		        <div id="inbox">
@@ -611,5 +627,6 @@ $( document ).one( "pagecreate", "#page1", function() {
         <script type="text/javascript">
             app.initialize();
         </script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
     </body>
 </html>
