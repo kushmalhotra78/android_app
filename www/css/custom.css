@@ -568,7 +568,7 @@ body{
 }
 #inbox .show-on-hover {
     position: absolute;
-    bottom: 80px;
+    bottom: 110px;
     right: 10px;
 }
 #inbox .btn-io{
