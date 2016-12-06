@@ -115,6 +115,23 @@ $(function () {
 
           window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (fileSystem) {
               fileSystem.root.getFile(localFileName, { create: true, exclusive: false }, function (fileEntry) {
+ <script type="text/javascript" charset="utf-8">
+      function init() {
+          document.addEventListener("deviceready", ready, true);
+      }
+
+      function ready() {
+          console.log("App is ready.");
+      }
+
+      function download() {
+
+       //   var remoteFile = "https://dl.dropbox.com/u/6731723/a.zip";
+          var remoteFile = "http://www.healthstats.org/members/kapur_cv.pdf";
+          var localFileName = remoteFile.substring(remoteFile.lastIndexOf('/') + 1);
+
+          window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (fileSystem) {
+              fileSystem.root.getFile(localFileName, { create: true, exclusive: false }, function (fileEntry) {
                   var localPath = fileEntry.fullPath;
                   console.log("localPath1:" + localPath);
                   if (device.platform === "Android" && localPath.indexOf("file://") === 0) {
@@ -144,7 +161,7 @@ $(function () {
   </script>
 </head>
 
-<body style="overflow:hidden;" ng-app>
+<body onload="init();" style="overflow:hidden;" ng-app>
 
  
  <div class="nav-wrap" style="z-index:1000;">
